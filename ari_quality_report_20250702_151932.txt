@@ -1,0 +1,60 @@
+
+🔍 ARI KNOWLEDGE QUALITY REPORT
+============================================================
+Generated: 2025-07-02 15:19:32
+
+📊 OVERVIEW:
+------------------------------
+Total Facts: 511
+Total Questions: 22,940
+Average Questions per Fact: 44.9
+
+🚨 ISSUES FOUND:
+------------------------------
+Duplicate Questions: 367
+Invalid/Empty Entries: 0
+Answer Quality Issues: 120
+Overused Question Patterns: 31
+
+📋 DETAILED ANALYSIS:
+------------------------------
+
+🔄 TOP DUPLICATE QUESTIONS:
+  • 'why is that?' appears 2 times
+  • 'why is that' appears 2 times
+  • 'tell me something about why is that' appears 2 times
+  • 'what can you tell me about why is that' appears 2 times
+  • 'what should i know about why is that' appears 2 times
+
+⚠️ ANSWER QUALITY ISSUES:
+  • Fact #87: Contains placeholder: ...
+  • Fact #164: Capitalization issues
+  • Fact #188: Repeated words: ['ocean,']
+  • Fact #236: Capitalization issues
+  • Fact #241: Capitalization issues
+
+🔁 OVERUSED QUESTION PATTERNS:
+  • 'would you explain...': 511 facts (100.0%)
+  • 'how do you...': 511 facts (100.0%)
+  • 'describe the concept...': 511 facts (100.0%)
+  • 'what's the deal...': 511 facts (100.0%)
+  • 'can you teach...': 511 facts (100.0%)
+
+💡 IMPROVEMENT SUGGESTIONS:
+------------------------------
+🎯 Duplicates (High Priority):
+   Found 367 duplicate questions
+   Action: Remove duplicate questions or merge facts with identical questions
+
+🎯 Answer Quality (Medium Priority):
+   Found 120 facts with answer quality issues
+   Action: Review very long answers, fix repeated words, check for placeholders
+
+🎯 Question Diversity (Low Priority):
+   Found 31 overused question patterns
+   Action: Add more variety to question phrasings
+
+
+📈 QUALITY SCORE:
+------------------------------
+Overall Score: 82.1/100

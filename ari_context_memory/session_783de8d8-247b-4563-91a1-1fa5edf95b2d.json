@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2025-07-02T17:58:24.918697",
+    "user_input": "Hello ARI, how are you today?",
+    "ari_response": "Hello! I'm doing well, thank you for asking. How can I help you today?",
+    "response_type": "greeting",
+    "success": true,
+    "context_position": 0
+  },
+  {
+    "timestamp": "2025-07-02T17:58:24.918697",
+    "user_input": "What can you do?",
+    "ari_response": "I can help with various tasks including answering questions, having conversations, and learning from our interactions.",
+    "response_type": "capability",
+    "success": true,
+    "context_position": 1
+  },
+  {
+    "timestamp": "2025-07-02T17:58:24.918697",
+    "user_input": "Can you learn new things?",
+    "ari_response": "Yes, I have learning capabilities and can improve from our conversations.",
+    "response_type": "learning",
+    "success": true,
+    "context_position": 2
+  },
+  {
+    "timestamp": "2025-07-02T17:58:24.918697",
+    "user_input": "That's interesting. What do you know about weather?",
+    "ari_response": "I can discuss weather topics and help with weather-related questions. What would you like to know?",
+    "response_type": "weather",
+    "success": true,
+    "context_position": 3
+  },
+  {
+    "timestamp": "2025-07-02T17:58:24.918697",
+    "user_input": "Do you remember what we talked about earlier?",
+    "ari_response": "Yes, we discussed my capabilities, learning abilities, and you asked about weather. I maintain context throughout our conversation.",
+    "response_type": "memory",
+    "success": true,
+    "context_position": 4
+  }
+]

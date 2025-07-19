@@ -1,0 +1,344 @@
+[
+  {
+    "timestamp": "2025-07-02T18:40:25.764903",
+    "user_input": "Hello ARI",
+    "ari_response": "Hello! How can I help you?",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.765920",
+    "user_input": "What's the weather?",
+    "ari_response": "I'm not sure about the weather right now.",
+    "feedback_type": "try again",
+    "feedback_score": 0.2,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.782751",
+    "user_input": "Tell me a joke",
+    "ari_response": "Why did the AI cross the road? To get to the other dataset!",
+    "feedback_type": "excellent",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.794072",
+    "user_input": "How are you?",
+    "ari_response": "I'm doing well, thank you for asking!",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.807332",
+    "user_input": "What can you do?",
+    "ari_response": "I can help with conversations and learning.",
+    "feedback_type": "perfect response",
+    "feedback_score": 0.5,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.835271",
+    "user_input": "Hello",
+    "ari_response": "Hi there!",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.837358",
+    "user_input": "How are you?",
+    "ari_response": "I'm fine, thanks!",
+    "feedback_type": "okay",
+    "feedback_score": 0.6,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.851457",
+    "user_input": "What's your name?",
+    "ari_response": "My name is ARI.",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:40:25.862492",
+    "user_input": "Tell me about yourself",
+    "ari_response": "I'm an AI assistant learning from our conversations.",
+    "feedback_type": "excellent",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.639403",
+    "user_input": "Hello ARI",
+    "ari_response": "Hello! How can I help you?",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.653168",
+    "user_input": "What's the weather?",
+    "ari_response": "I'm not sure about the weather right now.",
+    "feedback_type": "try again",
+    "feedback_score": 0.2,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.653168",
+    "user_input": "Tell me a joke",
+    "ari_response": "Why did the AI cross the road? To get to the other dataset!",
+    "feedback_type": "excellent",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.670602",
+    "user_input": "How are you?",
+    "ari_response": "I'm doing well, thank you for asking!",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.683483",
+    "user_input": "What can you do?",
+    "ari_response": "I can help with conversations and learning.",
+    "feedback_type": "perfect response",
+    "feedback_score": 0.5,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.714850",
+    "user_input": "Hello",
+    "ari_response": "Hi there!",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.714850",
+    "user_input": "How are you?",
+    "ari_response": "I'm fine, thanks!",
+    "feedback_type": "okay",
+    "feedback_score": 0.6,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.727710",
+    "user_input": "What's your name?",
+    "ari_response": "My name is ARI.",
+    "feedback_type": "good response",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "timestamp": "2025-07-02T18:43:54.737195",
+    "user_input": "Tell me about yourself",
+    "ari_response": "I'm an AI assistant learning from our conversations.",
+    "feedback_type": "excellent",
+    "feedback_score": 1.0,
+    "context_features": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  }
+]

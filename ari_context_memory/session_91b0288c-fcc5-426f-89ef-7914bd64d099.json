@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2025-07-02T18:44:00.192518",
+    "user_input": "good response",
+    "ari_response": "I see. Let me provide you with a thoughtful response.",
+    "response_type": "neural_generated",
+    "success": true,
+    "context_position": 0
+  },
+  {
+    "timestamp": "2025-07-02T18:44:00.354388",
+    "user_input": "quality metrics",
+    "ari_response": "I'm processing your message. How can I help you with that?",
+    "response_type": "neural_generated",
+    "success": true,
+    "context_position": 1
+  },
+  {
+    "timestamp": "2025-07-02T18:44:00.510813",
+    "user_input": "learning recommendations",
+    "ari_response": "That's an interesting point. Can you tell me more?",
+    "response_type": "neural_generated",
+    "success": true,
+    "context_position": 2
+  },
+  {
+    "timestamp": "2025-07-02T18:44:00.667885",
+    "user_input": "training readiness",
+    "ari_response": "Thank you for sharing that. What would you like to know?",
+    "response_type": "neural_generated",
+    "success": true,
+    "context_position": 3
+  },
+  {
+    "timestamp": "2025-07-02T18:44:00.827678",
+    "user_input": "try again",
+    "ari_response": "That's a good question. Let me help you with that.",
+    "response_type": "neural_generated",
+    "success": true,
+    "context_position": 4
+  }
+]

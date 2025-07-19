@@ -1,0 +1,45 @@
+{
+  "demo_results": {
+    "multi_agent_problem_solving": {
+      "success": false,
+      "error": "'MultiAgentCoordination' object has no attribute '_auction_protocol'"
+    },
+    "consciousness_modeling": {
+      "success": true,
+      "initial_consciousness_level": "Moderate Consciousness",
+      "final_consciousness_level": "Moderate Consciousness",
+      "consciousness_layers_active": 4,
+      "emergent_properties": 4,
+      "successful_modifications": 3,
+      "total_modifications": 3,
+      "consciousness_evolution": {
+        "awareness_change": 0.0,
+        "coherence_change": 0.0
+      },
+      "introspection_capability": true,
+      "self_modification_success_rate": 1.0
+    },
+    "distributed_coordination": {
+      "success": false,
+      "error": "'MultiAgentCoordination' object has no attribute '_auction_protocol'"
+    },
+    "emergent_behaviors": {
+      "success": false,
+      "error": "'MultiAgentCoordination' object has no attribute '_auction_protocol'"
+    },
+    "self_aware_operations": {
+      "success": false,
+      "error": "'MultiAgentCoordination' object has no attribute '_auction_protocol'"
+    }
+  },
+  "performance_metrics": {
+    "timestamp": "2025-07-02T19:37:34.811837",
+    "total_demos_run": 5,
+    "successful_demos": 1,
+    "overall_success_rate": 0.2,
+    "consciousness_level": "Moderate Consciousness",
+    "self_modification_rate": 1.0
+  },
+  "overall_success": false,
+  "timestamp": "2025-07-02T19:37:34.811837"
+}

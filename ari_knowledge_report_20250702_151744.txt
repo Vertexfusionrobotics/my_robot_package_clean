@@ -1,0 +1,66 @@
+
+🧠 ARI KNOWLEDGE BASE ANALYTICS REPORT
+============================================================
+Generated: 2025-07-02 15:17:44
+
+📊 BASIC STATISTICS:
+------------------------------
+Total Facts: 511
+Total Questions: 22,940
+Questions per Fact: 44.9
+
+📝 QUESTION ANALYSIS:
+------------------------------
+Average Question Length: 41.8 characters
+Question Length Range: 3 - 99 characters
+
+Top Question Patterns:
+  • 'what is the...': 1,695 questions
+  • 'how do you...': 539 questions
+  • 'how would you...': 515 questions
+  • 'what can you...': 513 questions
+  • 'can you teach...': 513 questions
+  • 'tell me something...': 511 questions
+  • 'what should i...': 511 questions
+  • 'give me information...': 511 questions
+  • 'share what you...': 511 questions
+  • 'help me understand...': 511 questions
+
+💬 ANSWER ANALYSIS:
+------------------------------
+Average Answer Length: 252.7 characters
+Answer Length Range: 11 - 843 characters
+
+🏷️ TOPIC DISTRIBUTION:
+------------------------------
+  • Technology/AI: 468 facts (91.6%)
+  • Science: 43 facts (8.4%)
+
+🎯 MOST COMPREHENSIVE TOPICS:
+------------------------------
+  • deal: 511 facts, 22940 questions
+  • please: 511 facts, 22940 questions
+  • meaning: 511 facts, 22940 questions
+  • should: 511 facts, 22940 questions
+  • learn: 511 facts, 22940 questions
+  • understand: 511 facts, 22940 questions
+  • describe: 511 facts, 22940 questions
+  • help: 511 facts, 22940 questions
+  • precisely: 511 facts, 22940 questions
+  • information: 511 facts, 22940 questions
+
+⚠️ KNOWLEDGE GAPS (Topics with <5 facts):
+------------------------------
+  • engineering: 2 facts
+  • psychology: 2 facts
+  • sports: 2 facts
+  • transportation: 3 facts
+  • medicine: 4 facts
+  • economics: 4 facts
+
+✅ RECOMMENDATIONS:
+------------------------------
+1. Consider adding more facts about: engineering, psychology, sports, transportation, medicine
+2. Most successful question patterns to use: what is the, how do you, how would you
+3. Knowledge base is strongest in: deal, please, meaning
+4. Total coverage is excellent with 22,940 ways to access 511 facts

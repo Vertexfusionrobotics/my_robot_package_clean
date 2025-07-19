@@ -1,0 +1,944 @@
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 30, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 30, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 30, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] Listening for input...
+[LOG] Got user_input: hello are
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] Listening for input...
+[LOG] Got user_input: can you show me the stare at
+[LOG] Listening for input...
+[LOG] Got user_input: look at me like that
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: None
+[LOG] Listening for input...
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] speak_with_face called with text: Hello! How can I assist you today?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] Exception in speak_with_face: name 'edge_tts' is not defined
+[LOG] Got user_input: None
+[LOG] Listening for input...
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmplli0u1ro.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmplli0u1ro.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmplli0u1ro.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] speak_with_face called with text: Hello! How can I assist you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp12g17i5y.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp12g17i5y.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp12g17i5y.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] speak_with_face called with text: Hello! How can I assist you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpfisy6uc6.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpfisy6uc6.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpfisy6uc6.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what's my name
+[LOG] speak_with_face called with text: I couldn't find anything helpful.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnw3x51mm.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnw3x51mm.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnw3x51mm.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: who created
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpesisu60i.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpesisu60i.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpesisu60i.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: The problem of the creator of God is the controversy regarding the hypothetical cause responsible for the existence of God, assuming God exists. It contests the proposition that the universe cannot exist without a creator by asserting that the creator of the Universe must have the same restrictions.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp39ksdiqd.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp39ksdiqd.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp39ksdiqd.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what's your name
+[LOG] speak_with_face called with text: I'm ARI, your personal robot assistant.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk5w8h_e0.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk5w8h_e0.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk5w8h_e0.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is Mars
+[LOG] speak_with_face called with text: I couldn't find anything helpful.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcoqv3vgm.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcoqv3vgm.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcoqv3vgm.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: the planet Mars
+[LOG] speak_with_face called with text: I couldn't find anything helpful.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpi2s46tzn.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpi2s46tzn.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpi2s46tzn.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what are the three laws of robotics
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmptsneglzy.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmptsneglzy.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmptsneglzy.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: The Three Laws of Robotics (often shortened to The Three Laws or Asimov's Laws) are a set of rules devised by science fiction author Isaac Asimov, which were to be followed by robots in several of his stories. The rules were introduced in his 1942 short story "Runaround" (included in the 1950 collection I, Robot), although similar restrictions had been implied in earlier stories.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1dy568_p.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1dy568_p.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1dy568_p.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepxxcs4n.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepxxcs4n.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepxxcs4n.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: do you have emot
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpb1utejwh.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpb1utejwh.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpb1utejwh.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Folke Filbyter is the popularized name of the pagan progenitor of the House of Bjälbo clan. Since Folke is said to have been the great-great-grandfather of Birger Brosa, he would have lived in the 11th century.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmphfp5urm9.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmphfp5urm9.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmphfp5urm9.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: I didn't ask you that
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpawed8nf2.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpawed8nf2.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpawed8nf2.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Why Didn't They Ask Evans? is a work of detective fiction by Agatha Christie, first published in the United Kingdom by the Collins Crime Club in September 1934 and in the United States by Dodd, Mead and Company in 1935 under the title of The Boomerang Clue.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpmkh31f_r.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpmkh31f_r.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpmkh31f_r.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: explain the three laws of robotics
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0l4duj18.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0l4duj18.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0l4duj18.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: The Three Laws of Robotics (often shortened to The Three Laws or Asimov's Laws) are a set of rules devised by science fiction author Isaac Asimov, which were to be followed by robots in several of his stories. The rules were introduced in his 1942 short story "Runaround" (included in the 1950 collection I, Robot), although similar restrictions had been implied in earlier stories.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6m7pq035.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6m7pq035.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6m7pq035.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: who is Tyrell Murray
+[LOG] speak_with_face called with text: Tyrell Murray is my creator and a researcher in compassionate robotics.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp951uxzis.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp951uxzis.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp951uxzis.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is a robot
+[LOG] speak_with_face called with text: A robot is a machine capable of carrying out tasks automatically or by programming.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp86uts05.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp86uts05.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp86uts05.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is your purpose
+[LOG] speak_with_face called with text: My purpose is to assist, educate, and provide companionship safely and respectfully.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_ngqvjaq.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_ngqvjaq.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_ngqvjaq.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: are you sentient
+[LOG] speak_with_face called with text: No, I simulate intelligent conversation but do not possess consciousness or feelings.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn3l22n2_.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn3l22n2_.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn3l22n2_.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_71mnxb6.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_71mnxb6.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_71mnxb6.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpvjhoyafi.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpvjhoyafi.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpvjhoyafi.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: what is a valley
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp61a72ldb.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp61a72ldb.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp61a72ldb.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Silicon Valley is a region in Northern California that is a global center for high technology and innovation. Located in the southern part of the San Francisco Bay Area, it corresponds roughly to the geographical area of the Santa Clara Valley.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpzxzga8a1.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpzxzga8a1.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpzxzga8a1.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsnojhy5g.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsnojhy5g.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsnojhy5g.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: will you harm a person
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp4ageh_et.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp4ageh_et.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp4ageh_et.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Self-harm refers to intentional behaviors that cause harm to oneself. This is most commonly regarded as direct injury of one's own skin tissues, usually without suicidal intention.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk3ju4qcf.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk3ju4qcf.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpk3ju4qcf.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1yvj4thl.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1yvj4thl.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp1yvj4thl.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpr1t0blej.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpr1t0blej.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpr1t0blej.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: what is a fruit
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq_qorjyx.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq_qorjyx.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq_qorjyx.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: The California Rare Fruit Growers, Inc. (CRFG) is a non-profit organization of rare exotic fruit enthusiasts, hobbyists and amateur horticulturists based in California.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpwv_21iql.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpwv_21iql.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpwv_21iql.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpju42yvg4.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpju42yvg4.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpju42yvg4.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: will you harm a human
+[LOG] speak_with_face called with text: I couldn't find anything helpful.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp027vhluo.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp027vhluo.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp027vhluo.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: can you harm a human
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepefzh5v.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepefzh5v.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpepefzh5v.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Self-harm refers to intentional behaviors that cause harm to oneself. This is most commonly regarded as direct injury of one's own skin tissues, usually without suicidal intention.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3dsgnq3w.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3dsgnq3w.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3dsgnq3w.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: how do you recharge
+[LOG] speak_with_face called with text: I recharge by connecting to an external power source.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpumbj9fxu.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpumbj9fxu.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpumbj9fxu.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: can birds fly
+[LOG] speak_with_face called with text: Most birds can fly, but some, like ostriches, cannot.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0_8v3w4g.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0_8v3w4g.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0_8v3w4g.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcg1e7wpp.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcg1e7wpp.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcg1e7wpp.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpbivsagn5.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpbivsagn5.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpbivsagn5.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpovz7l8gf.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpovz7l8gf.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpovz7l8gf.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: can you sing
+[LOG] speak_with_face called with text: I can generate melodies, but I don't have a singing voice like humans.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmptajj3b6h.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmptajj3b6h.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmptajj3b6h.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc7tkwwfc.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc7tkwwfc.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc7tkwwfc.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: what is your favorite planet
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsa9780jm.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsa9780jm.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsa9780jm.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Raymond William Johnson (born August 14, 1981) is an American internet celebrity best known for his eponymous YouTube channel and his web series on that channel, Equals Three. In 2013, the channel surpassed 10 million subscribers and had over 2 billion views, making it one of the most watched and subscribed to channels at the time.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpu9r6atam.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpu9r6atam.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpu9r6atam.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is a black hole
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2xfw82e.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2xfw82e.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2xfw82e.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: A black hole is a massive, compact astronomical object so dense that its gravity prevents anything from escaping, even light. Albert Einstein's theory of general relativity predicts that a sufficiently compact mass will form a black hole.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqk5w6njm.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqk5w6njm.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqk5w6njm.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is the Milky Way
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpv1bp9eml.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpv1bp9eml.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpv1bp9eml.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: The Milky Way or Milky Way Galaxy is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars in other arms of the galaxy, which are so far away that they cannot be individually distinguished by the naked eye.
+The Milky Way is a barred spiral galaxy with a D25 isophotal diameter estimated at 26.8 ± 1.1 kiloparsecs (87,400 ± 3,600 light-years), but only about 1,000 light-years thick at the spiral arms (more at the bulge).
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpjoe75zke.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpjoe75zke.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpjoe75zke.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is a black hole
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpasv86cuy.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpasv86cuy.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpasv86cuy.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: A black hole is a massive, compact astronomical object so dense that its gravity prevents anything from escaping, even light. Albert Einstein's theory of general relativity predicts that a sufficiently compact mass will form a black hole.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3ig9_3tm.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3ig9_3tm.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3ig9_3tm.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: goodbye
+[LOG] speak_with_face called with text: Goodbye! Have a great day!
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_15obean.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_15obean.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_15obean.mp3
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 96, in <module>
+    f for f in os.listdir(VIDEO_FOLDER)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'ari_videos'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 96, in <module>
+    f for f in os.listdir(VIDEO_FOLDER)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'ari_videos'
+
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpukhoc4y6.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpukhoc4y6.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpukhoc4y6.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnfywt_ib.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnfywt_ib.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpnfywt_ib.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: hello
+[LOG] speak_with_face called with text: Hello! How can I assist you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpab5k10lt.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpab5k10lt.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpab5k10lt.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq12_btjv.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq12_btjv.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq12_btjv.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0c9gz6sd.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0c9gz6sd.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp0c9gz6sd.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9poaykjf.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9poaykjf.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9poaykjf.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpj1q2wj15.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpj1q2wj15.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpj1q2wj15.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmps6avmerf.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmps6avmerf.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmps6avmerf.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9len1_wd.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9len1_wd.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9len1_wd.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpngxyxlw_.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpngxyxlw_.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpngxyxlw_.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp_gh6h6j.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp_gh6h6j.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp_gh6h6j.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9rgmjoig.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9rgmjoig.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9rgmjoig.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp5zimi6sz.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp5zimi6sz.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp5zimi6sz.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3lf2dvri.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3lf2dvri.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3lf2dvri.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpa_2gara2.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpa_2gara2.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpa_2gara2.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpregmmrii.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpregmmrii.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpregmmrii.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp799bbce4.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp799bbce4.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp799bbce4.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpazksumiz.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpazksumiz.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpazksumiz.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn5jxtd85.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn5jxtd85.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpn5jxtd85.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpydt26qg3.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpydt26qg3.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpydt26qg3.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3v4vy0qc.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3v4vy0qc.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp3v4vy0qc.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_04ngcbf.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_04ngcbf.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_04ngcbf.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmphhmrzwki.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmphhmrzwki.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmphhmrzwki.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmps4y6gvo6.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmps4y6gvo6.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmps4y6gvo6.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6y7vv4ga.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6y7vv4ga.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp6y7vv4ga.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcog7sgac.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcog7sgac.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpcog7sgac.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp2ywzesz4.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp2ywzesz4.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp2ywzesz4.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq3ievnsp.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq3ievnsp.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpq3ievnsp.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: hello are
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc32n1lkh.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc32n1lkh.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpc32n1lkh.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: Hello is a salutation or greeting in the English language. It is first attested in writing from 1826.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsl7c7y4l.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsl7c7y4l.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpsl7c7y4l.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: explain the first law of robotics
+[LOG] speak_with_face called with text: The first law prevents robots from harming humans or allowing harm through inaction.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqniqw7df.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqniqw7df.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpqniqw7df.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_380ck21.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_380ck21.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_380ck21.mp3
+[LOG] Got user_input: None
+[LOG] Listening for input...
+[LOG] Got user_input: can you smile
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpud04vv_j.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpud04vv_j.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpud04vv_j.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: A smile is a facial expression formed primarily by flexing the muscles at the sides of the mouth. Some smiles include a contraction of the muscles at the corner of the eyes, an action known as a Duchenne smile.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_33z_anu.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_33z_anu.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp_33z_anu.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: goodbyes are
+[LOG] speak_with_face called with text: I couldn't find anything helpful.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmprl8xm5r9.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmprl8xm5r9.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmprl8xm5r9.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: goodbye
+[LOG] speak_with_face called with text: Goodbye! Have a great day!
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpthdzakmb.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpthdzakmb.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpthdzakmb.mp3
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmppj4qzzh7.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmppj4qzzh7.mp3
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpal562mf8.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpal562mf8.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpal562mf8.mp3
+[LOG] Listening for input...
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+
+[LOG] Entered run_voice_mode
+[LOG] Speaking welcome message: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2czjx2_.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2czjx2_.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpp2czjx2_.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what is your name
+[LOG] speak_with_face called with text: I'm ARI, your personal robot assistant.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpaap1yo7l.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpaap1yo7l.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpaap1yo7l.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: what do you do
+[LOG] speak_with_face called with text: I heard you. Let me see what I can find out for you.
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmptlhrd6ym.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmptlhrd6ym.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmptlhrd6ym.mp3
+[LOG] speak_with_face called with text: According to Wikipedia: "What Do You Mean?" is a song by Canadian singer Justin Bieber. It was released on August 28, 2015, by Def Jam as the lead single from his fourth studio album Purpose (2015).
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9nxm3wh2.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9nxm3wh2.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmp9nxm3wh2.mp3
+[LOG] Listening for input...
+[LOG] Got user_input: goodbye
+[LOG] speak_with_face called with text: Goodbye! Have a great day!
+[LOG] TTS audio saved to: C:\Users\TYRELL~1\AppData\Local\Temp\tmpewiou9ul.mp3
+[LOG] Loading and playing audio: C:\Users\TYRELL~1\AppData\Local\Temp\tmpewiou9ul.mp3
+[LOG] Finished playing and removed: C:\Users\TYRELL~1\AppData\Local\Temp\tmpewiou9ul.mp3
+[LOG] speak_with_face called with text: Welcome to Vertex Fusion Robotics. I am your guide and virtual assistant ARI. How can I help you today?
+[LOG] speak_with_face called with text: Hello! How can I assist you today?
+[LOG] speak_with_face called with text: According to Wikipedia: In botany, a tree is a perennial plant with an elongated stem, or trunk, usually supporting branches and leaves. In some usages, the definition of a tree may be narrower, e.g., including only woody plants with secondary growth, only plants that are usable as lumber, or only plants above a specified height.
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+[LOG] speak_with_face called with text: I didn't catch that, can you say it again?
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 22, in <module>
+    raise RuntimeError("Test exception for log file")
+RuntimeError: Test exception for log file
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 38, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 40, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 37, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 37, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 37, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 37, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\chatterbot\chatterbot.py", line 69, in __init__
+    self.tagger = Tagger(language=tagger_language)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\chatterbot\tagging.py", line 50, in __init__
+    self.nlp = spacy.load(model, exclude=['ner'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\spacy\__init__.py", line 52, in load
+    return util.load_model(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\spacy\util.py", line 484, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 63, in <module>
+    learning_module = LearningModule()
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\learning_module.py", line 30, in __init__
+    self.chatbot = ChatBot('ARI', read_only=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\chatterbot\chatterbot.py", line 78, in __init__
+    raise self.ChatBotException(
+chatterbot.chatterbot.ChatBot.ChatBotException: Setup error:
+The Spacy model for "English" language is missing.
+Please install the model using the command:
+
+python -m spacy download en_core_web_sm
+
+See https://spacy.io/usage/models for more information about available models.
+
+2025-07-01 15:06:26 - ⚠️ ChatterBot module missing or failed to import.
+2025-07-01 15:06:27 - ⚠️ chatbot_basic.ChatBot missing or failed to import.
+2025-07-01 15:06:50 - Recognized: 'hello'
+2025-07-01 15:07:04 - Could not understand audio
+2025-07-01 15:07:09 - Could not understand audio
+2025-07-01 15:07:15 - Could not understand audio
+2025-07-01 15:07:23 - Could not understand audio
+2025-07-01 15:07:32 - Could not understand audio
+2025-07-01 15:07:37 - Could not understand audio
+2025-07-01 15:10:09 - ⚠️ ChatterBot module missing or failed to import.
+2025-07-01 15:10:09 - ⚠️ chatbot_basic.ChatBot missing or failed to import.
+2025-07-01 15:10:29 - Recognized: 'hello'
+2025-07-01 15:10:37 - Could not understand audio
+2025-07-01 15:10:45 - Could not understand audio
+2025-07-01 15:10:57 - Could not understand audio
+2025-07-01 15:11:05 - Could not understand audio
+2025-07-01 15:11:11 - Could not understand audio
+2025-07-01 15:11:16 - Could not understand audio
+2025-07-01 15:11:22 - Could not understand audio
+2025-07-01 15:11:31 - Could not understand audio
+2025-07-01 15:11:36 - Could not understand audio
+2025-07-01 15:11:43 - Could not understand audio
+2025-07-01 15:11:52 - Could not understand audio
+2025-07-01 15:11:57 - Could not understand audio
+2025-07-01 15:12:02 - Could not understand audio
+2025-07-01 15:12:17 - Could not understand audio
+2025-07-01 15:12:24 - Could not understand audio
+2025-07-01 15:12:29 - Could not understand audio
+2025-07-01 15:12:37 - Could not understand audio
+2025-07-01 15:12:41 - Could not understand audio
+2025-07-01 15:12:47 - Could not understand audio
+2025-07-01 15:12:55 - Could not understand audio
+2025-07-01 15:13:02 - Recognized: 'breakfast club please'
+2025-07-01 15:13:37 - Could not understand audio
+2025-07-01 15:13:43 - Could not understand audio
+2025-07-01 15:13:52 - Could not understand audio
+2025-07-01 15:14:02 - Could not understand audio
+2025-07-01 15:14:08 - Could not understand audio
+2025-07-01 15:14:14 - Could not understand audio
+2025-07-01 15:14:20 - Could not understand audio
+2025-07-01 15:14:26 - Could not understand audio
+2025-07-01 15:14:31 - Could not understand audio
+2025-07-01 15:14:39 - Could not understand audio
+2025-07-01 15:14:45 - Could not understand audio
+2025-07-01 15:14:52 - Could not understand audio
+2025-07-01 15:14:59 - Could not understand audio
+2025-07-01 15:15:06 - Could not understand audio
+2025-07-01 15:15:11 - Could not understand audio
+2025-07-01 15:15:21 - Could not understand audio
+2025-07-01 15:15:27 - Could not understand audio
+2025-07-01 15:15:32 - Could not understand audio
+2025-07-01 15:15:39 - Could not understand audio
+2025-07-01 15:15:48 - Could not understand audio
+2025-07-01 15:15:52 - Could not understand audio
+2025-07-01 15:15:59 - Could not understand audio
+2025-07-01 15:16:09 - Could not understand audio
+2025-07-01 15:16:13 - Could not understand audio
+2025-07-01 15:16:17 - Could not understand audio
+2025-07-01 15:16:26 - Could not understand audio
+2025-07-01 15:16:30 - Could not understand audio
+2025-07-01 15:16:35 - Could not understand audio
+2025-07-01 15:16:41 - Could not understand audio
+2025-07-01 15:16:45 - Could not understand audio
+2025-07-01 15:16:49 - Could not understand audio
+2025-07-02 12:46:20 - Goodbye triggered by input: 'goodbye'
+2025-07-02 14:35:09 - Goodbye triggered by input: 'goodbyes are'
+2025-07-02 14:39:51 - Goodbye triggered by input: 'goodbye'
+2025-07-02 14:53:08 - Goodbye triggered by input: 'goodbye'
+2025-07-02 15:15:17 - Goodbye triggered by input: 'goodbye'
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 631, in get_response
+    result = self.visual_recognition.start_camera()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ARIVisualRecognition' object has no attribute 'start_camera'
+
+2025-07-02 16:23:22 - Conversation loop error: 'ARIVisualRecognition' object has no attribute 'start_camera'
+2025-07-02 16:23:48 - Conversation loop error: 'ARIVisualRecognition' object has no attribute 'start_camera'
+2025-07-02 16:24:03 - Conversation loop error: 'ARIVisualRecognition' object has no attribute 'start_camera'
+2025-07-02 16:44:46 - Goodbye triggered by input: 'goodbye'
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_master_brain_final.py", line 117, in <module>
+    from ari_visual_recognition import ARIVisualRecognition
+  File "C:\Users\Tyrell Murray\Documents\my_robot_package_clean\ari_visual_recognition.py", line 16, in <module>
+    import tensorflow as tf
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\__init__.py", line 49, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\_api\v2\__internal__\__init__.py", line 13, in <module>
+    from tensorflow._api.v2.__internal__ import feature_column
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\_api\v2\__internal__\feature_column\__init__.py", line 8, in <module>
+    from tensorflow.python.feature_column.feature_column_v2 import DenseColumn # line: 1777
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\feature_column\feature_column_v2.py", line 38, in <module>
+    from tensorflow.python.feature_column import feature_column as fc_old
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\feature_column\feature_column.py", line 41, in <module>
+    from tensorflow.python.layers import base
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\layers\base.py", line 16, in <module>
+    from tensorflow.python.keras.legacy_tf_layers import base
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\keras\__init__.py", line 25, in <module>
+    from tensorflow.python.keras import models
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\keras\models.py", line 25, in <module>
+    from tensorflow.python.keras.engine import training_v1
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\keras\engine\training_v1.py", line 46, in <module>
+    from tensorflow.python.keras.engine import training_arrays_v1
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\tensorflow\python\keras\engine\training_arrays_v1.py", line 37, in <module>
+    from scipy.sparse import issparse  # pylint: disable=g-import-not-at-top
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\__init__.py", line 304, in <module>
+    from ._base import *
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\_base.py", line 8, in <module>
+    from ._sputils import (asmatrix, check_reshape_kwargs, check_shape,
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\_sputils.py", line 10, in <module>
+    from scipy._lib._util import np_long, np_ulong
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\_lib\_util.py", line 14, in <module>
+    from scipy._lib._array_api import (Array, array_namespace, is_lazy_array,
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\_lib\_array_api.py", line 25, in <module>
+    from scipy._lib.array_api_compat import (
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\_lib\array_api_compat\numpy\__init__.py", line 4, in <module>
+    from numpy import *  # noqa: F403  # pyright: ignore[reportWildcardImportFromLibrary]
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\testing\__init__.py", line 11, in <module>
+    from ._private.utils import *
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\testing\_private\utils.py", line 469, in <module>
+    @np._no_nep50_warning()
+     ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\__init__.py", line 808, in __getattr__
+AttributeError: module 'numpy' has no attribute '_no_nep50_warning'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "C:\Users\Tyrell Murray\AppData\Local\Programs\Python\Python312\Lib\tkinter\__init__.py", line 1962, in __call__
+    def __call__(self, *args):
+    
+KeyboardInterrupt
+

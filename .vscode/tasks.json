@@ -1,0 +1,84 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run ARI Assistant",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": ["ari_master_brain_final.py"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate ARI Greeting Audio",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": ["generate_greeting.py"],
+			"group": "test",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "Run ARI Audio Diagnostic Tool",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": ["test_ari_audio.py"],
+			"group": "test",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "Test ARI Greeting",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": ["test_ari_greeting.py"],
+			"group": "test",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		},
+		{
+			"label": "Test ARI Audio System",
+			"type": "shell",
+			"command": "${command:python.interpreterPath}",
+			"args": ["test_ari_greeting.py"],
+			"group": "test",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		}
+	]
+}

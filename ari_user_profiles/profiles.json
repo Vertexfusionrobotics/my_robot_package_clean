@@ -1,0 +1,82 @@
+{
+  "user_0": {
+    "interactions": 6,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "user_1": {
+    "interactions": 4,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "user_alice": {
+    "interactions": 24,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.7999999999999999,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "user_bob": {
+    "interactions": 6,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "user_charlie": {
+    "interactions": 3,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "emotional_user": {
+    "interactions": 15,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "advanced_user": {
+    "interactions": 15,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "test_user": {
+    "interactions": 12,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "emotion_test": {
+    "interactions": 12,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  },
+  "personalization_test": {
+    "interactions": 12,
+    "preferred_response_length": 0.5,
+    "formality_level": 0.5,
+    "detail_level": 0.5,
+    "topics_of_interest": [],
+    "communication_style": "balanced"
+  }
+}

@@ -1,0 +1,1800 @@
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you like to visit the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever talked to an AI before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think influences human behavior the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried birdwatching?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a banana?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite part of biology — animals, cells, or nature?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures from the summit?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you ever look up at the stars at night?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What other fruits do you think have weird facts like that?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to a rainforest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do black holes scare you or fascinate you?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is art?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like Renaissance art or music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite cat breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is psychology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about living things?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is science?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever looked at something under a microscope?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you heard about the latest discoveries in space?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What helps you relax when you're stressed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is renewable energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite dog breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is inside a black hole?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you like to visit the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever talked to an AI before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think influences human behavior the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried birdwatching?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a banana?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite part of biology — animals, cells, or nature?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures from the summit?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you ever look up at the stars at night?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What other fruits do you think have weird facts like that?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to a rainforest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do black holes scare you or fascinate you?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is art?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like Renaissance art or music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite cat breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is psychology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about living things?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is science?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever looked at something under a microscope?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you heard about the latest discoveries in space?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What helps you relax when you're stressed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is renewable energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite dog breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is inside a black hole?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you like to visit the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever talked to an AI before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think influences human behavior the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried birdwatching?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a banana?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite part of biology — animals, cells, or nature?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures from the summit?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you ever look up at the stars at night?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What other fruits do you think have weird facts like that?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to a rainforest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do black holes scare you or fascinate you?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is art?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like Renaissance art or music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite cat breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is psychology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about living things?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is science?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever looked at something under a microscope?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you heard about the latest discoveries in space?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What helps you relax when you're stressed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is renewable energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite dog breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is inside a black hole?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you like to visit the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever talked to an AI before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think influences human behavior the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried birdwatching?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a banana?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite part of biology — animals, cells, or nature?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures from the summit?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you ever look up at the stars at night?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What other fruits do you think have weird facts like that?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to a rainforest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do black holes scare you or fascinate you?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is art?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like Renaissance art or music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite cat breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is psychology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about living things?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is science?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever looked at something under a microscope?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you heard about the latest discoveries in space?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What helps you relax when you're stressed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is renewable energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite dog breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is inside a black hole?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you like to visit the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever talked to an AI before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think influences human behavior the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried birdwatching?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a banana?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite part of biology — animals, cells, or nature?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures from the summit?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you ever look up at the stars at night?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What other fruits do you think have weird facts like that?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to a rainforest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do black holes scare you or fascinate you?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is art?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like Renaissance art or music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite cat breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is psychology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about living things?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is science?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever looked at something under a microscope?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you heard about the latest discoveries in space?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What helps you relax when you're stressed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is renewable energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite dog breed?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is inside a black hole?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have solar panels or know someone who does?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your go-to song when you're happy or sad?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think makes a community strong?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the hottest place you've ever been?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like to paint or draw?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s your favorite healthy food?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know bananas are technically berries?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied psychology before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know what democracy means?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is your purpose?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like learning about cultures different from yours?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever been to an art museum?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like doing chemistry experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tasted really old honey?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you prefer bananas ripe or green?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is astronomy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like deep questions about life?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever owned a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: How do you take care of your mental health?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever tried coding before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you ever read Greek myths?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you go to Mars if you could?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who’s your favorite figure from that time — Da Vinci, Michelangelo, or someone else?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know why rainforests are so important?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What kind of music do you like?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like music?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite bird species?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite philosopher, if you have one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you trust a robot to drive your car?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Ever wonder why things fall or how gravity works?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you live in a house powered completely by renewables?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like mountains or beaches more?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever studied World War II?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you track your meals or just wing it?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the Sahara Desert?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any documentaries about the war?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to be an astronaut?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think there's ever been life on Mars?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you tried any special diets before?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is the first law of robotics?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Who's your favorite painter or artist?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know who Winston Churchill was?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a robot?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite planet or constellation?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s a question you’ve never found an answer to?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe people can really change?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Did you know honey doesn’t expire?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think about robots learning things on their own?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What’s cooler to you — black holes or quantum stuff?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which ancient Greek thinker do you like the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you enjoy physics experiments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What do you think is the cleanest source of energy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen pictures of the black hole we captured?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you want to build your own app or game?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you have liked to live during the Renaissance?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite element on the periodic table?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you use honey in your tea or cooking?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think you could survive in desert heat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you have a dog or want one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you seen any cool space movies?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is programming?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Tell me about black holes.
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is chemistry?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you believe therapy is helpful?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you know any bird calls?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What planet or moon do you want to visit the most?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Would you ever try to climb Mount Everest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's the coolest animal you've heard of that lives in one?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you play any instruments?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is a cat?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Which programming language do you find easiest?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is nutrition?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What's your favorite Mars rover?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you think dogs really understand us?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Do you like cats or are you more of a dog person?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever thought about how societies work?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is philosophy?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: Have you ever made a volcano in school?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+
+Q: What is sociology?
+A: [ERROR] 'ARIMasterBrain' object has no attribute 'preprocess_question'
+

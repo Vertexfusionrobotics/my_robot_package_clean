@@ -1,0 +1,327 @@
+[
+  {
+    "timestamp": "2025-07-02T12:47:50.254839",
+    "user_input": "What is Python?",
+    "system_response": "Python is a programming language",
+    "response_type": "semantic_match",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 3,
+      "char_count": 15,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.13333333333333333,
+      "avg_word_length": 4.333333333333333
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 32,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.03125,
+      "avg_word_length": 5.6
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:47:50.258514",
+    "user_input": "How are you?",
+    "system_response": "I'm doing well, thank you!",
+    "response_type": "direct_llm",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 3,
+      "char_count": 12,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.08333333333333333,
+      "avg_word_length": 3.3333333333333335
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 26,
+      "question_marks": 0,
+      "exclamation_marks": 1,
+      "uppercase_ratio": 0.038461538461538464,
+      "avg_word_length": 4.4
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:47:50.268589",
+    "user_input": "What is quantum physics?",
+    "system_response": "I don't have that information yet...",
+    "response_type": "fallback",
+    "success": false,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 4,
+      "char_count": 24,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.041666666666666664,
+      "avg_word_length": 5.25
+    },
+    "response_features": {
+      "word_count": 6,
+      "char_count": 36,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.027777777777777776,
+      "avg_word_length": 5.166666666666667
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:49:49.930465",
+    "user_input": "What is Python?",
+    "system_response": "Python is a programming language",
+    "response_type": "semantic_match",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 3,
+      "char_count": 15,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.13333333333333333,
+      "avg_word_length": 4.333333333333333
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 32,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.03125,
+      "avg_word_length": 5.6
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:49:49.931787",
+    "user_input": "How are you?",
+    "system_response": "I'm doing well, thank you!",
+    "response_type": "direct_llm",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 3,
+      "char_count": 12,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.08333333333333333,
+      "avg_word_length": 3.3333333333333335
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 26,
+      "question_marks": 0,
+      "exclamation_marks": 1,
+      "uppercase_ratio": 0.038461538461538464,
+      "avg_word_length": 4.4
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:49:49.943108",
+    "user_input": "What is quantum physics?",
+    "system_response": "I don't have that information yet...",
+    "response_type": "fallback",
+    "success": false,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 4,
+      "char_count": 24,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.041666666666666664,
+      "avg_word_length": 5.25
+    },
+    "response_features": {
+      "word_count": 6,
+      "char_count": 36,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.027777777777777776,
+      "avg_word_length": 5.166666666666667
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:51:56.010293",
+    "user_input": "What's the weather?",
+    "system_response": "It's sunny today!",
+    "response_type": "semantic_match",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 3,
+      "char_count": 19,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.05263157894736842,
+      "avg_word_length": 5.666666666666667
+    },
+    "response_features": {
+      "word_count": 3,
+      "char_count": 17,
+      "question_marks": 0,
+      "exclamation_marks": 1,
+      "uppercase_ratio": 0.058823529411764705,
+      "avg_word_length": 5.0
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:51:56.011384",
+    "user_input": "Tell me a joke",
+    "system_response": "I don't know any jokes yet",
+    "response_type": "fallback",
+    "success": false,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 4,
+      "char_count": 14,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.07142857142857142,
+      "avg_word_length": 2.75
+    },
+    "response_features": {
+      "word_count": 6,
+      "char_count": 26,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.038461538461538464,
+      "avg_word_length": 3.5
+    }
+  },
+  {
+    "timestamp": "2025-07-02T12:51:56.021394",
+    "user_input": "How do robots work?",
+    "system_response": "Robots use sensors and actuators...",
+    "response_type": "direct_llm",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 4,
+      "char_count": 19,
+      "question_marks": 1,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.05263157894736842,
+      "avg_word_length": 4.0
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 35,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.02857142857142857,
+      "avg_word_length": 6.2
+    }
+  },
+  {
+    "timestamp": "2025-07-02T13:56:01.973011",
+    "user_input": "Hello, this is a test",
+    "system_response": "This is a test response",
+    "response_type": "positive",
+    "success": null,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 5,
+      "char_count": 21,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.047619047619047616,
+      "avg_word_length": 3.4
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 23,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.043478260869565216,
+      "avg_word_length": 3.8
+    }
+  },
+  {
+    "timestamp": "2025-07-02T13:56:57.213302",
+    "user_input": "Hello, this is a test",
+    "system_response": "This is a test response",
+    "response_type": "positive",
+    "success": null,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 5,
+      "char_count": 21,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.047619047619047616,
+      "avg_word_length": 3.4
+    },
+    "response_features": {
+      "word_count": 5,
+      "char_count": 23,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.043478260869565216,
+      "avg_word_length": 3.8
+    }
+  },
+  {
+    "timestamp": "2025-07-02T14:04:07.093774",
+    "user_input": "test input",
+    "system_response": "test response",
+    "response_type": "positive",
+    "success": null,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 2,
+      "char_count": 10,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.0,
+      "avg_word_length": 4.5
+    },
+    "response_features": {
+      "word_count": 2,
+      "char_count": 13,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.0,
+      "avg_word_length": 6.0
+    }
+  },
+  {
+    "timestamp": "2025-07-02T15:00:37.833585",
+    "user_input": "goodbyes are",
+    "system_response": "Goodbye! I'm always here if you need assistance or just want to chat. Take care!",
+    "response_type": "semantic_match",
+    "success": true,
+    "feedback": null,
+    "response_time": null,
+    "input_features": {
+      "word_count": 2,
+      "char_count": 12,
+      "question_marks": 0,
+      "exclamation_marks": 0,
+      "uppercase_ratio": 0.0,
+      "avg_word_length": 5.5
+    },
+    "response_features": {
+      "word_count": 15,
+      "char_count": 80,
+      "question_marks": 0,
+      "exclamation_marks": 2,
+      "uppercase_ratio": 0.0375,
+      "avg_word_length": 4.4
+    }
+  }
+]
