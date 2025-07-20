@@ -167,6 +167,31 @@ class ARIContextMemory:
         # Return sorted by frequency
         return sorted(topic_counts.keys(), key=lambda x: topic_counts[x], reverse=True)
     
+    def get_conversation_history(self):
+        """Get full conversation history for the current session"""
+        return list(self.conversation_history)
+        
+    def get_learned_patterns(self):
+        """Get learned conversation patterns"""
+        patterns = []
+        if self.current_session_id and self.current_session_id in self.user_sessions:
+            session = self.user_sessions[self.current_session_id]
+            history = list(self.conversation_history)
+            
+            # Extract patterns from successful interactions
+            for i in range(len(history)-1):
+                if history[i].get("success", True):
+                    pattern = {
+                        "trigger": history[i]["user_input"],
+                        "response": history[i]["ari_response"],
+                        "context_keywords": list(session.get("context_keywords", [])),
+                        "topics": self.get_current_topics(),
+                        "success_rate": 1.0
+                    }
+                    patterns.append(pattern)
+                    
+        return patterns
+        
     def get_context_for_response_generation(self):
         """Get formatted context for neural response generation"""
         context = self.get_conversation_context()

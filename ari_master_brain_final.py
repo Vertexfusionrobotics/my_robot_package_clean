@@ -181,16 +181,54 @@ except ImportError:
     print("⚠️ Quantum consciousness system not available")
 
 class ARIMasterBrain:
-    def __init__(self):
+    def __init__(self, enable_gui=True):
         """Initialize the ARI Master Brain with advanced capabilities."""
         print("🤖 Initializing ARI Master Brain...")
         
-        # Initialize core components
-        self.knowledge = self.load_json("knowledge.json")
-        self.improved_knowledge = self.load_json("knowledge_improved.json")
-        self.learned_facts = self.load_json("learned_facts_expanded.json")
-        self.enhanced_knowledge = self.load_enhanced_knowledge()
+        # --- CRITICAL: Always define core flags first ---
+        self.name_collection_mode = False  # Track if we're collecting the user's name
+        self.mic_available = False
+        self.speaking = False
+        self._camera_initialized = False
+        self.greeting_done = threading.Event()
+        self.speaker_lock = threading.Lock()
+        self.microphone_lock = threading.Lock()
+        self.gui_enabled = enable_gui
+        self.gui = None
         
+        print("📸 Starting camera initialization...")
+        self.show_camera_feed_window()  # Start camera immediately
+        
+        # Initialize knowledge bases
+        print("🧠 Loading knowledge bases...")
+        self.knowledge = {}
+        self.improved_knowledge = {}
+        self.learned_facts = []
+        self.enhanced_knowledge = {}
+        
+        # Load core knowledge
+        knowledge_data = self.load_json("knowledge.json")
+        if knowledge_data:
+            print(f"✅ Loaded main knowledge base with {len(knowledge_data)} entries")
+            self.knowledge = knowledge_data
+        
+        # Load improved knowledge
+        improved_data = self.load_json("knowledge_improved.json")
+        if improved_data:
+            print(f"✅ Loaded improved knowledge with {len(improved_data)} entries")
+            self.improved_knowledge = improved_data
+            
+        # Load learned facts
+        facts_data = self.load_json("learned_facts_expanded.json")
+        if isinstance(facts_data, list) and facts_data:
+            print(f"✅ Loaded {len(facts_data)} learned facts")
+            self.learned_facts = facts_data
+            
+        # Load enhanced knowledge
+        self.enhanced_knowledge = self.load_enhanced_knowledge()
+        if self.enhanced_knowledge:
+            print("✅ Loaded enhanced knowledge base")
+            
         # Initialize speech recognition and microphone
         self.recognizer = sr.Recognizer() if 'sr' in globals() else None
         self.mic_available = self.setup_microphone() if self.recognizer else False
@@ -207,6 +245,10 @@ class ARIMasterBrain:
         self.speaking = False
         self.greeting_done = threading.Event()
         
+        # Initialize camera
+        print("[INFO] Starting camera feed...")
+        self.show_camera_feed_window()
+
         # User state
         self.new_user_detected = False
         self.name_collection_mode = False
@@ -215,20 +257,92 @@ class ARIMasterBrain:
     def show_camera_feed_window(self):
         """Show a separate camera feed window (always on in normal mode)"""
         def _camera_thread():
-            cap = cv2.VideoCapture(0)
-            if not cap.isOpened():
-                print("[Camera Feed] Could not open camera.")
+            if self._camera_initialized:
+                print("[Camera Feed] Camera already running.")
                 return
-            print("[Camera Feed] Press 'q' in the window to close camera feed.")
-            while True:
-                ret, frame = cap.read()
-                if not ret:
-                    break
-                cv2.imshow('ARI Camera Feed', frame)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
-            cap.release()
-            cv2.destroyAllWindows()
+
+            try:
+                print("[Camera Feed] Initializing camera and facial recognition...")
+                self._camera_initialized = True
+                cap = cv2.VideoCapture(0)
+                
+                # Initialize face detection cascade
+                face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+                
+                if not cap.isOpened():
+                    print("[Camera Feed] Could not open camera. Retrying...")
+                    time.sleep(1)
+                    cap = cv2.VideoCapture(0)
+                    if not cap.isOpened():
+                        print("[Camera Feed] Camera initialization failed!")
+                        self._camera_initialized = False
+                        return
+                
+                print("[Camera Feed] Camera initialized successfully!")
+                print("[Camera Feed] Press 'q' in the window to close camera feed.")
+                
+                while True:
+                    try:
+                        ret, frame = cap.read()
+                        if not ret:
+                            print("[Camera Feed] Failed to read frame. Retrying...")
+                            time.sleep(0.5)
+                            continue
+                            
+                        # Convert to grayscale for face detection
+                        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+                        
+                        # Process each detected face
+                        for (x, y, w, h) in faces:
+                            # Draw rectangle around face
+                            cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+                            
+                            # If we have visual recognition available, process the face
+                            if hasattr(self, 'visual_recognition') and self.visual_recognition:
+                                try:
+                                    # Extract face region and process
+                                    face_roi = frame[y:y+h, x:x+w]
+                                    # Use recognize_person instead of identify_face
+                                    person = self.visual_recognition.recognize_person(frame, [x, y, w, h])
+                                    if person and person.get('name'):
+                                        name = person['name']
+                                        confidence = person.get('confidence', 0)
+                                        # Draw name and confidence on the frame
+                                        cv2.putText(frame, f"{name} ({confidence:.2f})", 
+                                                  (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 
+                                                  0.9, (0, 255, 0), 2)
+                                        
+                                        # Update user profile if confidence is high enough
+                                        if confidence > 0.6:
+                                            if name != self.user_profile.get('name', ''):
+                                                self.user_profile['name'] = name
+                                                self.save_json("user_profile.json", self.user_profile)
+                                                self.new_user_detected = True
+                                                print(f"👋 Welcome back {name}! Nice to see you again!")
+                                            elif not self.greeting_done.is_set():
+                                                print(f"👋 Welcome back {name}! Nice to see you again!")
+                                                self.greeting_done.set()
+                                except Exception as e:
+                                    print(f"[Camera Feed] Face processing error: {e}")
+                        
+                        cv2.imshow('ARI Camera Feed', frame)
+                        if cv2.waitKey(1) & 0xFF == ord('q'):
+                            break
+                    except Exception as e:
+                        print(f"[Camera Feed] Error reading frame: {e}")
+                        break
+                        
+            except Exception as e:
+                print(f"[Camera Feed] Camera thread error: {e}")
+            finally:
+                try:
+                    cap.release()
+                    cv2.destroyAllWindows()
+                except:
+                    pass
+                self._camera_initialized = False
+                print("[Camera Feed] Camera thread ended.")
         # Start camera feed in a separate thread so it doesn't block main loop
         threading.Thread(target=_camera_thread, daemon=True).start()
     def run_test_mode_with_camera_window(self):
@@ -304,14 +418,8 @@ class ARIMasterBrain:
         ]
     }
 
-    def __init__(self, enable_gui=True):
-        # --- CRITICAL: Always define name_collection_mode, mic_available and speaking FIRST to prevent attribute errors ---
-        self.name_collection_mode = False  # Track if we're collecting the user's name (moved to top)
-        self.mic_available = False
-        self.speaking = False
-        self.greeting_done = threading.Event()
-        self.speaker_lock = threading.Lock()
-        self.microphone_lock = threading.Lock()  # Ensure microphone_lock is always defined
+    def initialize_gui(self):
+        """Initialize the GUI system with robust error handling"""
         
         # Initialize user profile
         try:
@@ -319,7 +427,6 @@ class ARIMasterBrain:
                 self.user_profile = json.load(f)
         except:
             self.user_profile = {"name": "", "interactions": 0}  # Create default profile
-        self.gui_enabled = enable_gui
         self.gui = None
         self._mic_error_shown = False  # Suppress repeated mic errors
         # Initialize speech recognizer
@@ -411,6 +518,15 @@ class ARIMasterBrain:
         self.context_memory = None
         self.advanced_generator = None
         self.visual_recognition = None
+        self.current_frame = None
+
+        # Initialize visual recognition system
+        try:
+            from ari_visual_recognition import ARIVisualRecognition
+            self.visual_recognition = ARIVisualRecognition(gui_mode=True)
+            print("✅ Visual recognition system initialized")
+        except Exception as e:
+            print(f"⚠️ Visual recognition initialization failed: {e}")
 
         # Initialize context memory
         if CONTEXT_MEMORY_AVAILABLE:
@@ -460,6 +576,133 @@ class ARIMasterBrain:
             print("⚠️ No advanced systems available - running in basic mode")
 
         print("🤖 ARI Master Brain initialization complete!")
+    def process_input(self, user_input):
+        """Process user input and generate appropriate response using all available systems"""
+        if not user_input:
+            return "I didn't catch that. Could you please repeat?"
+            
+        try:
+            # Strip and normalize input
+            user_input = user_input.strip()
+            user_input_lower = user_input.lower()
+            
+            # 1. Analyze sentiment and context
+            sentiment = None
+            if hasattr(self, 'sentiment_analyzer'):
+                sentiment_scores = self.sentiment_analyzer.polarity_scores(user_input)
+                sentiment = 'positive' if sentiment_scores['compound'] > 0.1 else 'negative' if sentiment_scores['compound'] < -0.1 else 'neutral'
+
+            # 2. Get rich context from memory
+            context = {}
+            immediate_context = {}
+            conversation_history = {}
+            learned_patterns = {}
+            
+            if self.context_memory:
+                try:
+                    # Get multi-level context information
+                    context = self.context_memory.get_conversation_context()
+                    immediate_context = self.context_memory.get_relevant_context(user_input)
+                    conversation_history = self.context_memory.get_conversation_history()
+                    learned_patterns = self.context_memory.get_learned_patterns()
+                    
+                    # Merge contexts for richer understanding
+                    context.update({
+                        'immediate_context': immediate_context,
+                        'conversation_history': conversation_history,
+                        'learned_patterns': learned_patterns,
+                        'current_sentiment': sentiment
+                    })
+                except Exception as e:
+                    print(f"Context memory error: {e}")
+
+            # 3. Try advanced response generation first with rich context
+            if self.advanced_generator:
+                try:
+                    advanced_response = self.advanced_generator.generate_response(
+                        user_input, 
+                        context=context,
+                        sentiment=sentiment
+                    )
+                    if advanced_response:
+                        # Store interaction
+                        if self.context_memory:
+                            self.context_memory.store_interaction(user_input, advanced_response, sentiment)
+                        return advanced_response
+                except Exception as e:
+                    print(f"Advanced generation error: {e}")
+
+            # 4. Try advanced consciousness systems
+            if self.advanced_consciousness_active:
+                try:
+                    consciousness_data = self.process_with_advanced_consciousness(user_input, context)
+                    if consciousness_data.get('advanced_processing'):
+                        response = self.generate_transcendent_response(user_input, consciousness_data)
+                        if response:
+                            return response
+                except Exception as e:
+                    print(f"Advanced consciousness error: {e}")
+
+            # 5. Fall back to standard response generation
+            response = self._generate_conversation_response(user_input)
+            
+            # 6. Save interaction for learning
+            try:
+                # Store in context memory
+                if self.context_memory:
+                    self.context_memory.store_interaction(user_input, response, sentiment)
+                
+                # Process with learning module
+                if hasattr(self, 'learning_module'):
+                    self.learning_module.learn_from_interaction(user_input, response, sentiment=sentiment)
+                    
+            except Exception as e:
+                print(f"Learning/context storage error: {e}")
+                    
+            return response
+            
+        except Exception as e:
+            print(f"Error in input processing: {e}")
+            return "I'm having trouble processing that input. Could you try rephrasing it?"
+
+        # Handle identity related commands
+        if user_input_lower in ['who am i', 'do you recognize me', 'who do you see']:
+            if self.user_profile.get('name'):
+                return f"Yes, I recognize you as {self.user_profile['name']}! It's good to see you again."
+            else:
+                return "I don't recognize you yet. You can teach me by saying 'learn my face as [your name]'"
+
+        # Handle face learning commands
+        if any(phrase in user_input_lower for phrase in ['learn my face as', 'remember me as', 'save my face as']):
+            try:
+                # Extract the name from command
+                name = user_input_lower.split(' as ')[-1].strip()
+                if name and hasattr(self, 'visual_recognition') and self.visual_recognition:
+                    # Let visual recognition system learn the face from camera
+                    success = self.visual_recognition.learn_face_from_camera(name)
+                    if success:
+                        self.user_profile['name'] = name  # Update user profile immediately
+                        self.save_json("user_profile.json", self.user_profile)  # Save to file
+                        return f"I've learned to recognize you as {name}! I'll remember you from now on."
+                    else:
+                        return "I couldn't learn your face. Please make sure you're clearly visible to the camera."
+                else:
+                    return "I need a name to remember you by. Try saying 'learn my face as [your name]'"
+            except Exception as e:
+                print(f"Face learning error: {e}")
+                return "Sorry, I had trouble learning your face. Please try again."
+                
+        # Handle goodbyes
+        if user_input_lower in ['goodbye', 'bye', 'see you']:
+            return "Goodbye! It was nice talking with you."
+            
+        # Handle activation commands
+        if user_input_lower in ['activate', 'wake up', 'start']:
+            return "I'm awake and ready to help you! What would you like to do?"
+            
+        # If no specific command matched, process as general conversation
+        return self._generate_conversation_response(user_input)
+
     def run(self):
         """Main ARI loop: keeps GUI/camera alive, and periodically checks for microphone if not available."""
         import time
@@ -723,6 +966,206 @@ class ARIMasterBrain:
             print(f"❌ GUI setup failed: {e}")
             self.gui = None
             
+    def _generate_conversation_response(self, user_input: str) -> str:
+        """Generate an appropriate response for general conversation"""
+        try:
+            # If there's no actual input, ask for clarification
+            if not user_input or not user_input.strip():
+                return "I didn't quite catch that. Could you please repeat?"
+
+            user_input_lower = user_input.lower().strip()
+            
+            # First check if this is a vision-related query
+            if any(word in user_input_lower for word in ['see', 'look', 'detect', 'recognize', 'camera']):
+                if hasattr(self, 'visual_recognition') and self.visual_recognition:
+                    # Get the current scene analysis
+                    frame = self.visual_recognition.capture_frame()
+                    if frame is not None:
+                        scene_info = self.visual_recognition.analyze_scene(frame)
+                        
+                        # Handle object detection queries
+                        if 'object' in user_input_lower:
+                            objects = scene_info.get('objects_detected', [])
+                            if objects:
+                                object_labels = [obj['label'] for obj in objects]
+                                return f"I can see: {', '.join(object_labels)}"
+                            return "I don't see any recognizable objects right now."
+                        
+                        # Handle face/person detection queries
+                        if any(word in user_input_lower for word in ['face', 'me', 'person', 'people']):
+                            if scene_info['faces_detected'] > 0:
+                                if scene_info.get('people_recognized'):
+                                    names = [p['name'] for p in scene_info['people_recognized']]
+                                    emotions = [e['emotion'] for e in scene_info.get('emotions_detected', [])]
+                                    if emotions:
+                                        return f"Yes, I see you! I recognize {', '.join(names)} and you seem to be feeling {', '.join(set(emotions))}."
+                                    return f"Yes, I see you! I recognize {', '.join(names)}."
+                                return "I can see you, but I haven't been introduced yet. You can teach me who you are by saying 'learn my face as [your name]'."
+                            return "I don't see any faces right now."
+                            
+            # Handle knowledge-based questions
+            if any(word in user_input_lower for word in ['what', 'who', 'where', 'when', 'why', 'how']):
+                # 1. Try improved knowledge first (most up to date)
+                if self.improved_knowledge:
+                    # Direct match
+                    if user_input_lower in self.improved_knowledge:
+                        return self.improved_knowledge[user_input_lower]
+                    # Partial match
+                    for key, value in self.improved_knowledge.items():
+                        if isinstance(key, str) and key.lower() in user_input_lower:
+                            if isinstance(value, str):
+                                return value
+                            elif isinstance(value, dict):
+                                if 'answer' in value:
+                                    return value['answer']
+
+                # 2. Try base knowledge
+                # Direct match
+                if user_input_lower in self.knowledge:
+                    return self.knowledge[user_input_lower]
+                
+                # Then check nested knowledge structure
+                for domain, content in self.knowledge.items():
+                    if isinstance(content, dict):
+                        # Check domain match
+                        if domain.lower() in user_input_lower:
+                            # Try chatbot questions/responses first (most natural)
+                            if 'chatbot_questions' in content and 'chatbot_responses' in content:
+                                for q, r in zip(content['chatbot_questions'], content['chatbot_responses']):
+                                    if any(keyword in user_input_lower for keyword in q.lower().split()):
+                                        return r
+                            # Try casual/formal explanations
+                            if 'casual' in content:
+                                return content['casual']
+                            elif 'formal' in content:
+                                return content['formal']
+                        
+                        # Check subdomain matches
+                        for subtopic, info in content.items():
+                            if isinstance(info, dict) and subtopic.lower() in user_input_lower:
+                                if 'casual' in info:
+                                    return info['casual']  # Prefer casual
+                                elif 'formal' in info:
+                                    return info['formal']
+
+                # 3. Try learned facts (most specific)
+                if self.learned_facts:
+                    for fact in self.learned_facts:
+                        # Check questions array
+                        questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
+                        for question in questions:
+                            if question and (question.lower() in user_input_lower or any(word in question.lower() for word in user_input_lower.split())):
+                                return fact.get('answer', fact.get('explanation', ''))
+
+                        # Check by topic
+                        if 'topic' in fact and fact['topic'].lower() in user_input_lower:
+                            return fact.get('answer', fact.get('explanation', ''))
+                            
+                # Check learned facts
+                if self.learned_facts:
+                    for fact in self.learned_facts:
+                        # Handle both array and single questions
+                        questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
+                        for question in questions:
+                            if question and question.lower() in user_input_lower:
+                                return fact.get('answer', fact.get('explanation', ''))
+                                
+                # Try advanced pattern matching
+                matching_responses = []
+                for topic, data in self.knowledge.items():
+                    if isinstance(data, dict):
+                        for subtopic, content in data.items():
+                            if isinstance(content, dict):
+                                if any(word in user_input_lower for word in subtopic.lower().split()):
+                                    if 'casual' in content:
+                                        matching_responses.append(content['casual'])
+                                    elif 'formal' in content:
+                                        matching_responses.append(content['formal'])
+                
+                if matching_responses:
+                    return max(matching_responses, key=len)  # Return most detailed response
+                    
+            # Handle greetings
+            if any(word in user_input_lower for word in ['hello', 'hi', 'hey']):
+                if self.user_profile.get('name'):
+                    return f"Hello {self.user_profile['name']}! How can I help you today?"
+                return "Hello! How can I help you today?"
+                
+            # Handle goodbyes
+            if any(word in user_input_lower for word in ['goodbye', 'bye', 'see you']):
+                return "Goodbye! It was nice talking with you."
+                
+            # Handle self-identity questions
+            if 'who are you' in user_input_lower or 'what are you' in user_input_lower:
+                return "I'm ARI (Advanced Robotic Intelligence), a personal AI assistant created by Vertex Fusion Robotics. I can help you with various tasks, answer questions, recognize faces and objects, and learn from our interactions."
+                
+            # If no specific response found, give a contextual learning response
+            context_words = [word for word in user_input_lower.split() if len(word) > 3]
+            if context_words:
+                return f"That's an interesting question about {' and '.join(context_words)}. While I'm still learning about this specific topic, I'd be happy to learn more together."
+                
+            return "I understand what you're asking, but I'm not sure how to answer that yet. Would you like to help me learn more about this topic?"
+            
+        except Exception as e:
+            print(f"Error in conversation response: {e}")
+            return "I encountered an error while processing your request. Could you try rephrasing that?"
+
+        # Handle knowledge-based questions
+        if user_input_lower.startswith(('what', 'who', 'where', 'when', 'why', 'how')):
+            # First check if the exact question exists in knowledge
+            if user_input_lower in self.knowledge:
+                return self.knowledge[user_input_lower]
+            
+            # Then look for partial matches in knowledge
+            for key, value in self.knowledge.items():
+                if isinstance(key, str) and key.lower() in user_input_lower:
+                    return value
+            
+            # Check learned facts
+            if self.learned_facts:
+                for fact in self.learned_facts:
+                    # Handle arrays of questions
+                    questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
+                    for question in questions:
+                        if question.lower() in user_input_lower:
+                            return fact.get('answer', '')
+
+            # If no specific answer found, check if there's a relevant topic in knowledge
+            for key, value in self.knowledge.items():
+                if isinstance(value, dict):  # Handle nested knowledge structure
+                    for topic, info in value.items():
+                        if topic.lower() in user_input_lower:
+                            if isinstance(info, dict) and 'casual' in info:
+                                return info['casual']  # Prefer casual explanation
+                            elif isinstance(info, dict) and 'formal' in info:
+                                return info['formal']  # Fall back to formal explanation
+                            elif isinstance(info, str):
+                                return info
+
+            # If no specific answer found, give a learning-focused response
+            return "That's an interesting question. While I'm still learning, I'd be happy to learn more about this topic together."
+                
+        # Use banter system for general conversation
+        context_type = None
+        if any(word in user_input_lower for word in ['help', 'assist', 'can you']):
+            context_type = 'positive'
+        elif any(word in user_input_lower for word in ['problem', 'issue', 'error']):
+            context_type = 'negative'
+        elif any(word in user_input_lower for word in ['why', 'how', 'what', 'explain']):
+            context_type = 'logic'
+            
+        return self._select_banter_response(user_input, context_type)
+
+    def save_json(self, filename, data):
+        """Save data to a JSON file"""
+        try:
+            with open(filename, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4)
+            return True
+        except Exception as e:
+            print(f"Error saving {filename}: {e}")
+            return False
+            
     def update_gui_state(self, state, value=True):
         """Update GUI animation state with robust error handling"""
         
@@ -849,6 +1292,22 @@ class ARIMasterBrain:
     def generate_transcendent_response(self, user_input: str, consciousness_data: dict) -> str:
         """Generate response using transcendent consciousness insights"""
         try:
+            # First try to generate a response using basic conversation logic
+            basic_response = self._generate_basic_response(user_input)
+            if basic_response:
+                return basic_response
+            
+            # If no basic response is suitable, try context-aware response
+            if consciousness_data and consciousness_data.get('context'):
+                conversation_context = consciousness_data.get('context', {}).get('conversation_context', {})
+                recent_topics = conversation_context.get('current_topics', [])
+                turn_count = conversation_context.get('total_turns', 0)
+                
+                context_response = self._generate_context_aware_response(user_input, recent_topics, turn_count)
+                if context_response:
+                    return context_response
+            
+            # Only proceed with advanced consciousness if needed
             if not consciousness_data.get('advanced_processing'):
                 return None
                 
@@ -864,7 +1323,12 @@ class ARIMasterBrain:
             # Analyze the user input to provide context-appropriate responses
             user_input_lower = user_input.lower().strip()
             
-            # Check for follow-up responses to previous questions
+            # First try basic response
+            basic_response = self._generate_basic_response(user_input)
+            if basic_response:
+                return basic_response
+                
+            # Then check for follow-up responses to previous questions
             context_aware_response = self._generate_context_aware_response(user_input, recent_topics, turn_count)
             if context_aware_response:
                 return context_aware_response
@@ -1035,6 +1499,33 @@ class ARIMasterBrain:
                    "and help you explore the different aspects. What specific angle or approach would "
                    "be most helpful for you right now?")
 
+    def _generate_basic_response(self, user_input: str) -> str:
+        """Generate basic responses before escalating to more complex processing."""
+        user_input_lower = user_input.lower().strip()
+
+        # Check basic greetings
+        greetings = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']
+        if any(greeting in user_input_lower for greeting in greetings):
+            name = getattr(self, 'user_profile', {}).get('name', '')
+            if name:
+                return f"Hello {name}! How can I help you today?"
+            return "Hello! I'm ARI. How can I help you today?"
+
+        # Check for basic questions
+        if 'who are you' in user_input_lower or 'what are you' in user_input_lower:
+            return "I'm ARI, an AI assistant designed to help with various tasks and conversations. I can engage in both simple and complex discussions depending on your needs."
+
+        # Check for basic commands
+        if 'help' in user_input_lower:
+            return "I can help you with many things! Just let me know what you'd like assistance with."
+
+        # Check for basic sentiment responses
+        if any(word in user_input_lower for word in ['thanks', 'thank you']):
+            return "You're welcome! Let me know if there's anything else I can help with."
+
+        # If no basic response matches, return None to allow more complex processing
+        return None
+
     def _generate_context_aware_response(self, user_input: str, recent_topics: list, turn_count: int) -> str:
         """Generate context-aware responses based on conversation history"""
         try:
@@ -1172,11 +1663,50 @@ class ARIMasterBrain:
             return "I'll remember you now. How can I help you?"
 
     def load_json(self, filename):
+        """Load and validate JSON data from file"""
         try:
-            with open(filename, "r", encoding="utf-8") as f:
-                return json.load(f)
+            # Get absolute path
+            filepath = os.path.join(os.path.dirname(__file__), filename)
+            
+            # Check if file exists
+            if not os.path.exists(filepath):
+                print(f"❌ File not found: {filename}")
+                return {}
+                
+            # Try to load and parse JSON
+            with open(filepath, "r", encoding="utf-8") as f:
+                try:
+                    data = json.load(f)
+                    print(f"✅ Successfully loaded {filename}")
+                    return data
+                except json.JSONDecodeError as je:
+                    # Handle corrupt JSON
+                    print(f"❌ JSON error in {filename}: {je}")
+                    
+                    # Try to fix common JSON issues
+                    content = f.read()
+                    content = content.strip()
+                    if not content:
+                        print(f"❌ {filename} is empty")
+                        return {}
+                        
+                    try:
+                        # Try to parse with error handling
+                        import ast
+                        fixed_content = ast.literal_eval(content)
+                        print(f"✅ Successfully repaired {filename}")
+                        
+                        # Save fixed version
+                        with open(filepath, "w", encoding="utf-8") as f:
+                            json.dump(fixed_content, f, indent=2)
+                            
+                        return fixed_content
+                    except:
+                        print(f"❌ Could not repair {filename}")
+                        return {}
+                        
         except Exception as e:
-            print(f"Error loading {filename}: {e}")
+            print(f"❌ Error loading {filename}: {e}")
             return {}
 
     def load_enhanced_knowledge(self):

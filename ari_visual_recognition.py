@@ -75,6 +75,9 @@ class ARIVisualRecognition:
         self.current_frame = None
         self.gui_mode = gui_mode
         
+        # Load any previously saved faces
+        self._load_known_faces()
+        
         # Only initialize vision systems, never auto-start camera
         self.initialize_vision_systems(auto_start=False)
         
@@ -113,9 +116,6 @@ class ARIVisualRecognition:
             
             # Load known faces database
             self.load_known_faces()
-            
-            # Load object detection model
-            self.load_object_detection_model()
             
             print("✅ Visual recognition system initialized successfully")
             return True
@@ -287,11 +287,14 @@ class ARIVisualRecognition:
             
             if best_match:
                 # Update metadata
+                # Only update metadata occasionally to avoid constant saves
                 if best_match in self.known_faces:
-                    self.known_faces[best_match]['last_seen'] = datetime.now().isoformat()
-                    self.known_faces[best_match]['times_seen'] += 1
-                    self.known_faces[best_match]['confidence_history'].append(best_confidence)
-                    self.save_known_faces()
+                    now = datetime.now()
+                    last_update = datetime.fromisoformat(self.known_faces[best_match].get('last_seen', '2000-01-01'))
+                    if (now - last_update).total_seconds() > 300:  # Update every 5 minutes
+                        self.known_faces[best_match]['last_seen'] = now.isoformat()
+                        self.known_faces[best_match]['times_seen'] = self.known_faces[best_match].get('times_seen', 0) + 1
+                        self._save_known_faces()
                 
                 return {
                     'name': best_match,
@@ -498,32 +501,48 @@ class ARIVisualRecognition:
                 face_encoding = cv2.calcHist([gray_face], [0], None, [256], [0, 256]).flatten()
                 print("✅ Using OpenCV histogram for face encoding")
             
-            # Store the encoding
-            if hasattr(face_encoding, 'tolist'):
-                self.face_encodings[person_name] = face_encoding.tolist()
-            elif isinstance(face_encoding, list):
-                self.face_encodings[person_name] = face_encoding
-            else:
-                self.face_encodings[person_name] = face_encoding.tolist() if hasattr(face_encoding, 'tolist') else list(face_encoding)
-            
-            # Store metadata
+            # Store face data
             self.known_faces[person_name] = {
-                'first_seen': datetime.now().isoformat(),
-                'times_seen': 1,
+                'encoding': face_encoding.tolist(),
+                'encoding_method': encoding_method,
                 'last_seen': datetime.now().isoformat(),
-                'confidence_history': [],
-                'method': encoding_method
+                'recognition_count': 0
             }
             
-            # Save to disk
-            self.save_known_faces()
-            
-            print(f"✅ Learned new face: {person_name}")
+            # Save to file
+            self._save_known_faces()
+            print(f"✅ Learned face for {person_name}")
             return True
             
         except Exception as e:
-            print(f"❌ Error learning new face: {e}")
+            print(f"❌ Error learning face: {e}")
             return False
+            
+    def _save_known_faces(self):
+        """Save known faces to a JSON file"""
+        try:
+            faces_file = os.path.join(os.path.dirname(__file__), 'known_faces.json')
+            with open(faces_file, 'w') as f:
+                json.dump(self.known_faces, f)
+            print("✅ Saved known faces to file")
+        except Exception as e:
+            print(f"❌ Error saving known faces: {e}")
+            
+    def _load_known_faces(self):
+        """Load known faces from JSON file"""
+        try:
+            faces_file = os.path.join(os.path.dirname(__file__), 'known_faces.json')
+            if os.path.exists(faces_file):
+                with open(faces_file, 'r') as f:
+                    self.known_faces = json.load(f)
+                print(f"✅ Loaded {len(self.known_faces)} known faces")
+                
+                # Convert loaded lists back to numpy arrays
+                for name, face_data in self.known_faces.items():
+                    if isinstance(face_data['encoding'], list):
+                        face_data['encoding'] = np.array(face_data['encoding'])
+        except Exception as e:
+            print(f"❌ Error loading known faces: {e}")
     
     def start_camera(self, gui_mode=True):
         """Start or connect to a camera.
@@ -1078,6 +1097,36 @@ class ARIVisualRecognition:
             return {"emotion": "unknown", "confidence": 0.1}
 
     def cnn_emotion_detection(self, face_roi):
+        """CNN-based emotion detection using deep learning model"""
+        if not self.emotion_model:
+            return None
+            
+        try:
+            # Preprocess face for emotion model
+            gray = cv2.cvtColor(face_roi, cv2.COLOR_BGR2GRAY)
+            resized = cv2.resize(gray, (48, 48))
+            normalized = resized.astype('float32') / 255.0
+            reshaped = normalized.reshape(1, 48, 48, 1)
+            
+            # Predict emotion
+            prediction = self.emotion_model.predict(reshaped, verbose=0)
+            
+            emotions = ['angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral']
+            emotion_idx = np.argmax(prediction[0])
+            confidence = float(prediction[0][emotion_idx])
+            
+            return {
+                "emotion": emotions[emotion_idx],
+                "confidence": confidence,
+                "all_scores": {
+                    emotions[i]: float(prediction[0][i])
+                    for i in range(len(emotions))
+                }
+            }
+            
+        except Exception as e:
+            print(f"❌ Error in CNN emotion detection: {e}")
+            return None
         """CNN-based emotion detection"""
         if not self.emotion_model:
             return None
