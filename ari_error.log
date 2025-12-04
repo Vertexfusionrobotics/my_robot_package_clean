@@ -942,3 +942,108 @@ Traceback (most recent call last):
     
 KeyboardInterrupt
 
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 67, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 67, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 67, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 67, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 67, in <module>
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+ModuleNotFoundError: No module named 'vaderSentiment'
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+
+
+--- Uncaught Exception ---
+Traceback (most recent call last):
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_master_brain_final.py", line 185, in <module>
+    from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
+  File "/home/tyrellmurray28/my_robot_package_clean/ari_stage7_quantum_consciousness.py", line 903
+    print(f"   Overall Status: {'🌟 QUANTUM-ENHANCED AGI ACTIVE' if all([
+          ^
+SyntaxError: unterminated string literal (detected at line 903)
+

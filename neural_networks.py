@@ -26,9 +26,9 @@ try:
     from tensorflow.keras import layers, models, optimizers
     TF_AVAILABLE = True
     print("✅ TensorFlow available for deep learning")
-except ImportError:
+except (ImportError, Exception) as e:
     TF_AVAILABLE = False
-    print("⚠️ TensorFlow not available - installing...")
+    print(f"⚠️ TensorFlow not available - Neural networks disabled (CPU incompatibility)")
 
 try:
     import sklearn
@@ -467,8 +467,4 @@ def install_tensorflow():
 
 # Auto-install TensorFlow if not available
 if not TF_AVAILABLE:
-    print("🚀 Neural networks require TensorFlow. Installing...")
-    if install_tensorflow():
-        print("🔄 Please restart Python to use neural networks")
-    else:
-        print("❌ Manual installation required: pip install tensorflow scikit-learn")
+    print("⚠️ TensorFlow disabled - CPU incompatibility detected. Neural network features will be unavailable.")

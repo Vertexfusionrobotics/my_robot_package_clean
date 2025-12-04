@@ -26,17 +26,17 @@ class ARIVoiceSystem:
         self.ensure_edge_tts()
     
     def ensure_edge_tts(self):
-        """Ensure edge-tts is installed"""
+        """Ensure edge-tts-ari (pyttsx3-based) is installed"""
         try:
-            import edge_tts
+            import edge_tts_ari as edge_tts
             self.edge_tts = edge_tts
-            print("✅ Edge-TTS ready")
+            print("✅ Edge-TTS-ARI (offline female voice) ready")
         except ImportError:
-            print("📦 Installing edge-tts...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "edge-tts"])
-            import edge_tts
+            print("📦 Installing pyttsx3 for offline TTS...")
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "pyttsx3", "gtts", "pydub"])
+            import edge_tts_ari as edge_tts
             self.edge_tts = edge_tts
-            print("✅ Edge-TTS installed and ready")
+            print("✅ Edge-TTS-ARI (offline female voice) installed and ready")
     
     def find_audio_player(self):
         """Find the best available audio player on Windows"""
@@ -138,55 +138,39 @@ class ARIVoiceSystem:
             print(f"❌ WMPlayer playback failed: {e}")
             return False
     
-    async def generate_speech(self, text):
-        """Generate speech audio file using edge-tts"""
+    async def generate_and_speak(self, text):
+        """Generate and speak using edge-tts-ari (handles playback internally)"""
         try:
-            # Create a temporary file for the audio
-            temp_dir = tempfile.gettempdir()
-            self.temp_audio_file = os.path.join(temp_dir, "ari_sonia_voice.mp3")
-            
-            # Generate speech
-            communicate = self.edge_tts.Communicate(text, self.voice)
-            await communicate.save(self.temp_audio_file)
-            
-            print(f"🎵 Generated speech audio: {self.temp_audio_file}")
-            return self.temp_audio_file
+            # edge_tts_ari.create_audio_from_text() generates AND plays the audio
+            # It handles everything internally and cleans up temp files
+            await self.edge_tts.create_audio_from_text(text)
+            return True
             
         except Exception as e:
-            print(f"❌ Speech generation failed: {e}")
-            return None
+            print(f"❌ Speech generation/playback failed: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
     
     def speak(self, text):
-        """Speak the given text using Sonia voice"""
+        """Speak the given text using natural female voice (gTTS)"""
         print(f"🗣️ ARI speaking: '{text[:50]}{'...' if len(text) > 50 else ''}'")
         
         try:
-            # Generate the speech audio
-            audio_file = asyncio.run(self.generate_speech(text))
-            if not audio_file or not os.path.exists(audio_file):
-                print("❌ Failed to generate speech audio")
-                return False
-            
-            # Find and use the best audio player
-            player_func = self.find_audio_player()
-            success = player_func(audio_file)
+            # Let edge_tts_ari handle everything (generation + playback)
+            success = asyncio.run(self.generate_and_speak(text))
             
             if success:
-                print("✅ Speech playback completed")
+                print("✅ Speech completed")
             else:
-                print("❌ All audio playback methods failed")
-            
-            # Clean up temporary file
-            try:
-                if os.path.exists(audio_file):
-                    os.remove(audio_file)
-            except:
-                pass
+                print("❌ Speech failed")
             
             return success
             
         except Exception as e:
             print(f"❌ Speech error: {e}")
+            import traceback
+            traceback.print_exc()
             return False
     
     def test_voice(self):

@@ -1,5 +1,14 @@
 import cv2
 import threading
+
+# Try to import face recognition
+try:
+    from ari_face_recognition import AriFaceRecognition
+    FACE_RECOGNITION_ENABLED = True
+except Exception as e:
+    print(f"⚠️ Face recognition not available: {e}")
+    FACE_RECOGNITION_ENABLED = False
+
 #!/usr/bin/env python3
 """
 ARI MASTER BRAIN - COMPLETE FULL INTEGRATED SYSTEM
@@ -62,13 +71,13 @@ try:
     import os
     os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
     import speech_recognition as sr
-    import edge_tts
+    import edge_tts_ari as edge_tts  # Use local pyttsx3-based TTS with female voice
     import wikipedia
     import pygame
     WIKIPEDIA_AVAILABLE = True
 except ImportError:
     WIKIPEDIA_AVAILABLE = False
-    print("⚠️ Missing some packages: speech_recognition, edge_tts, wikipedia, or pygame")
+    print("⚠️ Missing some packages: speech_recognition, edge_tts_ari, wikipedia, or pygame")
 
 try:
     from chatbot_basic import get_chatbot_response
@@ -176,12 +185,12 @@ try:
     from ari_stage7_quantum_consciousness import QuantumConsciousnessModel
     QUANTUM_CONSCIOUSNESS_AVAILABLE = True
     print("✅ Quantum consciousness system available")
-except ImportError:
+except (ImportError, SyntaxError) as e:
     QUANTUM_CONSCIOUSNESS_AVAILABLE = False
     print("⚠️ Quantum consciousness system not available")
 
 class ARIMasterBrain:
-    def __init__(self, enable_gui=True):
+    def __init__(self, enable_gui=True, grass_gui=False):
         """Initialize the ARI Master Brain with advanced capabilities."""
         print("🤖 Initializing ARI Master Brain...")
         
@@ -194,10 +203,49 @@ class ARIMasterBrain:
         self.speaker_lock = threading.Lock()
         self.microphone_lock = threading.Lock()
         self.gui_enabled = enable_gui
+        self.grass_gui_mode = grass_gui
         self.gui = None
+        self.grass_gui = None
         
-        print("📸 Starting camera initialization...")
-        self.show_camera_feed_window()  # Start camera immediately
+        # Initialize face recognition if available
+        self.face_recognition = None
+        self.current_user = None
+        self.user_emotion = "neutral"
+        if FACE_RECOGNITION_ENABLED:
+            try:
+                self.face_recognition = AriFaceRecognition()
+                print("✅ Face recognition system initialized!")
+                print("ℹ️  Note: Camera may not be available on Chromebook Linux")
+                print("   - Face recognition is ready but needs camera access")
+                print("   - Try using a USB webcam or run on Raspberry Pi/PC")
+            except Exception as e:
+                print(f"⚠️ Face recognition init failed: {e}")
+                self.face_recognition = None
+        else:
+            print("ℹ️ Face recognition disabled")
+        
+        # Initialize grass GUI if requested
+        if self.grass_gui_mode:
+            print("🌱 Initializing grass GUI...")
+            try:
+                from ari_grass_gui import ARIGrassGUI
+                print("🌱 ARIGrassGUI imported")
+                self.grass_gui = ARIGrassGUI()
+                print("✅ Grass GUI object created!")
+                # Start GUI in background thread
+                gui_thread = threading.Thread(target=self.grass_gui.run, daemon=True)
+                gui_thread.start()
+                print("✅ Grass GUI thread started!")
+            except Exception as e:
+                print(f"⚠️ Grass GUI initialization failed: {e}")
+                import traceback
+                traceback.print_exc()
+                self.grass_gui = None
+        
+        # Only show camera feed if not using grass GUI
+        if not self.grass_gui_mode:
+            print("📸 Starting camera initialization...")
+            self.show_camera_feed_window()  # Start camera immediately
         
         # Initialize knowledge bases
         print("🧠 Loading knowledge bases...")
@@ -576,6 +624,95 @@ class ARIMasterBrain:
             print("⚠️ No advanced systems available - running in basic mode")
 
         print("🤖 ARI Master Brain initialization complete!")
+        
+        # Start face recognition monitoring if available
+        if self.face_recognition and FACE_RECOGNITION_ENABLED:
+            threading.Thread(target=self._monitor_faces, daemon=True).start()
+    
+    def _monitor_faces(self):
+        """Background thread to monitor for faces"""
+        if not self.face_recognition:
+            return
+            
+        try:
+            self.face_recognition.initialize_camera()
+            time.sleep(2)  # Let camera warm up
+            
+            last_greeting = {}
+            
+            while True:
+                if self.face_recognition.detect_presence():
+                    name, confidence, emotion = self.face_recognition.recognize_face()
+                    
+                    # Update current state
+                    self.current_user = name
+                    self.user_emotion = emotion
+                    
+                    # Greet new person
+                    if name and name not in last_greeting:
+                        greeting = self._generate_personalized_greeting(name, emotion)
+                        print(f"🤖 ARI: {greeting}")
+                        self.speak(greeting)
+                        last_greeting[name] = time.time()
+                    elif name and (time.time() - last_greeting.get(name, 0) > 300):
+                        # Re-greet after 5 minutes
+                        greeting = f"Welcome back, {name}!"
+                        print(f"🤖 ARI: {greeting}")
+                        self.speak(greeting)
+                        last_greeting[name] = time.time()
+                    elif not name and emotion != "neutral":
+                        # Unknown person with emotion
+                        if time.time() - last_greeting.get("unknown", 0) > 60:
+                            greeting = self._generate_emotion_response(emotion)
+                            print(f"🤖 ARI: {greeting}")
+                            self.speak(greeting)
+                            last_greeting["unknown"] = time.time()
+                
+                time.sleep(3)  # Check every 3 seconds
+                
+        except Exception as e:
+            print(f"[ERROR] Face monitoring: {e}")
+    
+    def _generate_personalized_greeting(self, name, emotion):
+        """Generate a personalized greeting based on name and emotion"""
+        if emotion == "happy":
+            greetings = [
+                f"Hi {name}! You look so happy today! That's wonderful!",
+                f"Hello {name}! What a great smile! Ready to learn something new?",
+                f"Hey there {name}! Your positive energy is amazing!"
+            ]
+        elif emotion == "sad":
+            greetings = [
+                f"Hi {name}. I notice you might be feeling a little down. Want to talk about it?",
+                f"Hello {name}. Everything okay? I'm here if you need someone to talk to.",
+                f"Hey {name}, everyone has tough days. How can I help?"
+            ]
+        elif emotion == "surprised":
+            greetings = [
+                f"Whoa, {name}! You look surprised! Did something interesting happen?",
+                f"Hi {name}! You have that look of discovery! Tell me what's on your mind!",
+                f"Hello {name}! You look like you discovered something cool!"
+            ]
+        else:
+            greetings = [
+                f"Hello {name}! Great to see you!",
+                f"Hi {name}! Ready to explore together?",
+                f"Hey {name}! What should we learn about today?"
+            ]
+        
+        return random.choice(greetings)
+    
+    def _generate_emotion_response(self, emotion):
+        """Generate response for unknown person with emotion"""
+        if emotion == "happy":
+            return "Hi there! You look happy! I'm ARI, nice to meet you!"
+        elif emotion == "sad":
+            return "Hello. You seem a bit sad. I'm ARI, and I'm here to help if you want to talk."
+        elif emotion == "surprised":
+            return "Wow! You look surprised! I'm ARI, your friendly assistant!"
+        else:
+            return "Hello! I'm ARI! I don't think we've met yet. What's your name?"
+    
     def process_input(self, user_input):
         """Process user input and generate appropriate response using all available systems"""
         if not user_input:
@@ -585,6 +722,23 @@ class ARIMasterBrain:
             # Strip and normalize input
             user_input = user_input.strip()
             user_input_lower = user_input.lower()
+            
+            # Check for face learning request
+            if "learn my face" in user_input_lower or "remember me" in user_input_lower or "recognize me" in user_input_lower:
+                if self.face_recognition and FACE_RECOGNITION_ENABLED:
+                    return "LEARN_FACE"
+                else:
+                    return "I would love to remember faces, but my camera isn't set up yet!"
+            
+            # Respond with personalized greeting if we know who they are
+            if self.current_user and ("who am i" in user_input_lower or "do you know me" in user_input_lower):
+                return f"Of course! You're {self.current_user}! It's great to see you!"
+            
+            # Respond to emotional state
+            if self.user_emotion == "sad" and any(word in user_input_lower for word in ["feel", "am", "today"]):
+                return "I noticed you seem a bit sad. Is everything okay? Want to talk about it?"
+            elif self.user_emotion == "happy" and any(word in user_input_lower for word in ["feel", "am", "today"]):
+                return "You look so happy! That makes me happy too! What's making you smile?"
             
             # 1. Analyze sentiment and context
             sentiment = None
@@ -1771,6 +1925,13 @@ class ARIMasterBrain:
             except:
                 pass
             
+            # Update grass GUI
+            try:
+                if self.grass_gui:
+                    self.grass_gui.start_speaking()
+            except:
+                pass
+            
             try:
                 # Use the robust voice system
                 if not hasattr(self, 'voice_system'):
@@ -1795,6 +1956,12 @@ class ARIMasterBrain:
                                 self.update_gui_state('is_speaking', False)
                         except:
                             pass
+                        # Update grass GUI
+                        try:
+                            if self.grass_gui:
+                                self.grass_gui.stop_speaking()
+                        except:
+                            pass
                 
                 # Start speaking in background
                 import threading
@@ -1809,6 +1976,13 @@ class ARIMasterBrain:
                             self.gui.root.update()
                         except:
                             pass
+                    # Keep grass GUI updating
+                    if self.grass_gui and hasattr(self.grass_gui, 'root'):
+                        try:
+                            self.grass_gui.root.update_idletasks()
+                            self.grass_gui.root.update()
+                        except:
+                            pass
                     import time
                     time.sleep(0.05)  # Small delay to prevent CPU overload
                 
@@ -1821,6 +1995,12 @@ class ARIMasterBrain:
                 try:
                     if self.gui_enabled and self.gui:
                         self.update_gui_state('is_speaking', False)
+                except:
+                    pass
+                # Update grass GUI
+                try:
+                    if self.grass_gui:
+                        self.grass_gui.stop_speaking()
                 except:
                     pass
 
@@ -1899,11 +2079,11 @@ class ARIMasterBrain:
         exit(0)
 
     def get_response(self, user_input, acknowledge_if_slow=False):
-        """Get appropriate response for user input"""
+        """Get appropriate response for user input using all knowledge sources"""
         if not user_input:
             return "I didn't catch that. Could you please repeat?"
             
-        user_input = user_input.lower().strip()
+        user_input_lower = user_input.lower().strip()
         
         # Process with advanced consciousness if available
         if hasattr(self, 'advanced_consciousness_active') and self.advanced_consciousness_active:
@@ -1911,18 +2091,66 @@ class ARIMasterBrain:
             response = self.generate_transcendent_response(user_input, consciousness_data)
             if response:
                 return response
-                
-        # Basic responses if no advanced processing
-        if "hello" in user_input or "hi" in user_input:
+        
+        # 1. Try chatbot_basic first (uses get_structured_response with all knowledge files)
+        try:
+            chatbot_response = get_chatbot_response(user_input_lower)
+            if chatbot_response and not any(fallback in chatbot_response.lower() for fallback in [
+                "i'm not sure about that topic yet",
+                "i don't know the answer",
+                "i'm not sure how to respond",
+                "structured response placeholder"
+            ]):
+                return chatbot_response
+        except Exception as e:
+            print(f"[DEBUG] Chatbot error: {e}")
+        
+        # 2. Try learning module (searches learned_facts_expanded.json and Ollama)
+        if hasattr(self, 'learning_module') and self.learning_module:
+            try:
+                learning_response = self.learning_module.find_match(user_input_lower)
+                if learning_response and learning_response.strip():
+                    return learning_response
+            except Exception as e:
+                print(f"[DEBUG] Learning module error: {e}")
+        
+        # 3. Try Wikipedia for factual questions
+        if any(word in user_input_lower for word in ['what', 'who', 'where', 'when', 'explain', 'tell me about']):
+            try:
+                if WIKIPEDIA_AVAILABLE:
+                    # Extract the main topic
+                    topic = user_input_lower
+                    for prefix in ['what is', 'who is', 'where is', 'when is', 'tell me about', 'explain']:
+                        if prefix in topic:
+                            topic = topic.replace(prefix, '').strip()
+                    # Remove question marks and extra words
+                    topic = topic.replace('?', '').replace('a ', '').replace('an ', '').replace('the ', '').strip()
+                    if topic and len(topic) > 2:
+                        summary = wikipedia.summary(topic, sentences=2)
+                        if summary:
+                            return summary
+            except wikipedia.DisambiguationError as e:
+                try:
+                    # Try the first option
+                    summary = wikipedia.summary(e.options[0], sentences=2)
+                    if summary:
+                        return summary
+                except:
+                    pass
+            except:
+                pass
+        
+        # 4. Fallback to basic conversation responses
+        if "hello" in user_input_lower or "hi" in user_input_lower:
             return "Hello! How can I assist you today?"
-        elif "how are you" in user_input:
+        elif "how are you" in user_input_lower:
             return "I'm functioning well, thank you for asking! How may I help you?"
-        elif "your name" in user_input:
+        elif "your name" in user_input_lower:
             return "My name is ARI, and I'm here to assist you."
-        elif "what can you do" in user_input:
+        elif "what can you do" in user_input_lower:
             return "I can help with various tasks, including answering questions, processing visual information through my camera, and engaging in meaningful conversations. What would you like to explore?"
         else:
-            return "I understand you said: '" + user_input + "'. How can I help you with that?"
+            return f"I understand you're asking about '{user_input}'. While I'm still learning about this topic, I'd be happy to help you explore it together. What specifically would you like to know?"
 
     def check_audio_system(self):
         """Stub for audio system check. Returns True for now."""
@@ -2045,6 +2273,38 @@ class ARIMasterBrain:
                         continue
 
                     response = self.get_response(user_input)
+                    
+                    # Check if user wants to learn face
+                    if response == "LEARN_FACE":
+                        learn_msg = "Great! Let me learn your face! What's your name?"
+                        print(f"ARI: {learn_msg}")
+                        self.speak(learn_msg)
+                        
+                        # Wait for name
+                        print("🎤 Listening for your name...")
+                        name_input = self.listen_for_voice(timeout=10, phrase_time_limit=5)
+                        if name_input:
+                            person_name = name_input.strip()
+                            confirm_msg = f"Okay {person_name}! Look at the camera and I'll remember you!"
+                            print(f"ARI: {confirm_msg}")
+                            self.speak(confirm_msg)
+                            
+                            # Learn the face in background thread
+                            def learn_face_async():
+                                try:
+                                    success = self.face_recognition.learn_face(person_name)
+                                    if success:
+                                        success_msg = f"Awesome! I'll remember you now, {person_name}!"
+                                    else:
+                                        success_msg = "Hmm, that didn't work. Let's try again later!"
+                                    print(f"ARI: {success_msg}")
+                                    self.speak(success_msg)
+                                except Exception as e:
+                                    print(f"[ERROR] Face learning failed: {e}")
+                            
+                            threading.Thread(target=learn_face_async, daemon=True).start()
+                        continue
+                    
                     print(f"ARI: {response}")
                     self.speak(response)  # Actually speak the response
 
@@ -2221,14 +2481,20 @@ def send_expression(expression):
 
 # Main execution block
 if __name__ == "__main__":
+    print("=" * 80)
+    print("🚀 MAIN BLOCK STARTING")
+    print("=" * 80)
     import argparse
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='ARI Master Brain - Advanced AI Assistant')
     parser.add_argument('--no-gui', action='store_true', help='Disable GUI interface (enabled by default)')
+    parser.add_argument('--grass-gui', action='store_true', help='Use simple grass animation GUI')
     args = parser.parse_args()
 
     try:
-        brain = ARIMasterBrain(enable_gui=not args.no_gui)
+        print(f"🔧 Starting ARI with grass_gui={args.grass_gui}")
+        brain = ARIMasterBrain(enable_gui=not args.no_gui, grass_gui=args.grass_gui)
+        print("✅ ARIMasterBrain initialized")
         brain.run()
     except KeyboardInterrupt:
         print("\n👋 ARI shutdown requested by user")
@@ -2236,13 +2502,21 @@ if __name__ == "__main__":
         print(f"❌ Critical error starting ARI: {e}")
         import traceback
         traceback.print_exc()
+        import sys
+        sys.exit(1)
     finally:
         try:
-            if 'brain' in locals() and brain.gui_enabled and brain.gui:
-                print("🔄 Final GUI cleanup...")
-                brain.gui.stop()
-                brain.gui = None
-                print("✅ Final GUI cleanup complete")
+            if 'brain' in locals():
+                if brain.gui_enabled and brain.gui:
+                    print("🔄 Final GUI cleanup...")
+                    brain.gui.stop()
+                    brain.gui = None
+                    print("✅ Final GUI cleanup complete")
+                if brain.grass_gui:
+                    print("🔄 Final Grass GUI cleanup...")
+                    brain.grass_gui.stop()
+                    brain.grass_gui = None
+                    print("✅ Final Grass GUI cleanup complete")
         except:
             pass
 
