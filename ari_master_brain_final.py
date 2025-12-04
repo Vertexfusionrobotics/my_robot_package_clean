@@ -242,8 +242,24 @@ class ARIMasterBrain:
                 traceback.print_exc()
                 self.grass_gui = None
         
-        # Only show camera feed if not using grass GUI
-        if not self.grass_gui_mode:
+        # Initialize visual GUI if enabled and not using grass GUI
+        if self.gui_enabled and not self.grass_gui_mode:
+            print("🎨 Initializing visual GUI...")
+            print(f"[DEBUG] gui_enabled={self.gui_enabled}, grass_gui_mode={self.grass_gui_mode}")
+            try:
+                self.initialize_gui()  # This calls the method at line 1128
+                print("[DEBUG] initialize_gui() call completed")
+                if self.gui:
+                    print("[DEBUG] self.gui object exists!")
+                else:
+                    print("[DEBUG] WARNING: self.gui is None after initialization!")
+            except Exception as e:
+                print(f"[DEBUG] ERROR during initialize_gui: {e}")
+                import traceback
+                traceback.print_exc()
+        
+        # Only show camera feed if not using any GUI
+        if not self.grass_gui_mode and not self.gui_enabled:
             print("📸 Starting camera initialization...")
             self.show_camera_feed_window()  # Start camera immediately
         
@@ -253,6 +269,7 @@ class ARIMasterBrain:
         self.improved_knowledge = {}
         self.learned_facts = []
         self.enhanced_knowledge = {}
+        self.dialogue_system = {}
         
         # Load core knowledge
         knowledge_data = self.load_json("knowledge.json")
@@ -271,6 +288,14 @@ class ARIMasterBrain:
         if isinstance(facts_data, list) and facts_data:
             print(f"✅ Loaded {len(facts_data)} learned facts")
             self.learned_facts = facts_data
+        
+        # Load dialogue system (topic-based conversation logic)
+        dialogue_data = self.load_json("ari_dialogue.json")
+        if dialogue_data and 'topics' in dialogue_data:
+            print(f"✅ Loaded dialogue system with {len(dialogue_data['topics'])} conversation topics")
+            self.dialogue_system = dialogue_data.get('topics', {})
+        else:
+            print("⚠️ Dialogue system not available")
             
         # Load enhanced knowledge
         self.enhanced_knowledge = self.load_enhanced_knowledge()
@@ -293,10 +318,9 @@ class ARIMasterBrain:
         self.speaking = False
         self.greeting_done = threading.Event()
         
-        # Initialize camera
-        print("[INFO] Starting camera feed...")
-        self.show_camera_feed_window()
-
+        # DON'T initialize camera here - let GUI or main loop handle it
+        # The camera window was blocking GUI initialization
+        
         # User state
         self.new_user_detected = False
         self.name_collection_mode = False
@@ -466,8 +490,8 @@ class ARIMasterBrain:
         ]
     }
 
-    def initialize_gui(self):
-        """Initialize the GUI system with robust error handling"""
+    def _initialize_core_systems(self):
+        """Initialize core systems (called by the correct initialize_gui method later)"""
         
         # Initialize user profile
         try:
@@ -622,6 +646,15 @@ class ARIMasterBrain:
             print(f"🌟 Advanced systems active: {', '.join(advanced_systems_active)}")
         else:
             print("⚠️ No advanced systems available - running in basic mode")
+
+        # Start a new conversation session for context tracking
+        if self.context_memory:
+            try:
+                user_name = self.user_profile.get('name', 'user')
+                self.context_memory.start_new_session(user_id=user_name)
+                print(f"💬 Started conversation session for {user_name}")
+            except Exception as e:
+                print(f"⚠️ Could not start conversation session: {e}")
 
         print("🤖 ARI Master Brain initialization complete!")
         
@@ -858,27 +891,37 @@ class ARIMasterBrain:
         return self._generate_conversation_response(user_input)
 
     def run(self):
-        """Main ARI loop: keeps GUI/camera alive, and periodically checks for microphone if not available."""
+        """Main ARI loop: runs GUI mainloop and handles background tasks"""
         import time
         print("[INFO] ARI main loop starting...")
-        retry_interval = 5  # seconds between mic checks
-        while True:
-            if not self.mic_available:
-                if not self._mic_error_shown:
-                    print("[WARNING] No microphone available. Retrying in a few seconds...")
-                    self._mic_error_shown = True
-                # Try to re-detect microphone
-                if self.recognizer:
-                    mic_now = self.setup_microphone(show_error=False)
-                    if mic_now:
-                        self.mic_available = True
-                        self._mic_error_shown = False
-                        print("[INFO] Microphone detected! Voice interaction enabled.")
-                time.sleep(retry_interval)
-                continue
-            # ...existing main loop code for ARI goes here...
-            # For now, just keep GUI/camera alive
-            time.sleep(1)
+        
+        # If GUI is enabled (grass or visual), run the voice interaction in background
+        if (self.gui_enabled and self.gui and hasattr(self.gui, 'root')) or self.grass_gui:
+            print("🎨 Starting GUI with background voice interaction...")
+            
+            # Start voice interaction in background thread
+            def voice_interaction_thread():
+                self.voice_activated_mode()
+            
+            # Start background voice thread
+            import threading
+            voice_thread = threading.Thread(target=voice_interaction_thread, daemon=True)
+            voice_thread.start()
+            
+            # Run the appropriate GUI mainloop (this blocks until window is closed)
+            try:
+                if self.grass_gui and hasattr(self.grass_gui, 'root'):
+                    print("🌱 Starting Grass GUI mainloop...")
+                    self.grass_gui.root.mainloop()
+                elif self.gui and hasattr(self.gui, 'root'):
+                    print("🎨 Starting Visual GUI mainloop...")
+                    self.gui.root.mainloop()
+            except Exception as e:
+                print(f"[ERROR] GUI mainloop error: {e}")
+        else:
+            # No GUI - run voice interaction directly in main thread
+            print("[INFO] Running without GUI...")
+            self.voice_activated_mode()
 
     def _select_banter_response(self, user_input: str = "", context_type: str = None, sentiment: str = None) -> str:
         """Select a contextually appropriate banter/response based on sentiment, context, and input."""
@@ -1100,19 +1143,27 @@ class ARIMasterBrain:
                 
             # Create GUI instance and run it properly without threading issues
             try:
+                print("[DEBUG] Creating ARIVisualGUI instance...")
                 self.gui = ARIVisualGUI()
+                print("[DEBUG] ARIVisualGUI instance created")
                 
-                # Don't start GUI mainloop here - let it run its own animation
-                # The GUI will handle its own updates via root.after() calls
-                
-                # Give GUI time to initialize
-                import time
-                time.sleep(0.5)
+                # Force the window to update and show immediately
+                self.gui.root.update_idletasks()
+                self.gui.root.update()
                 
                 print("✅ GUI interface initialized")
                 print("🎨 CHECK YOUR SCREEN NOW - ARI GUI WINDOW SHOULD BE VISIBLE!")
+                print(f"[DEBUG] GUI window state: {self.gui.root.state()}")
+                
+                # Give GUI time to render
+                import time
+                time.sleep(0.5)
+                self.gui.root.update()
+                
             except Exception as e:
                 print(f"❌ GUI creation failed: {e}")
+                import traceback
+                traceback.print_exc()
                 self.gui = None
                 return
                 
@@ -1121,13 +1172,37 @@ class ARIMasterBrain:
             self.gui = None
             
     def _generate_conversation_response(self, user_input: str) -> str:
-        """Generate an appropriate response for general conversation"""
+        """Generate natural, contextual responses for conversation"""
         try:
             # If there's no actual input, ask for clarification
             if not user_input or not user_input.strip():
                 return "I didn't quite catch that. Could you please repeat?"
 
             user_input_lower = user_input.lower().strip()
+            
+            # Build context from recent conversation
+            conversation_context = ""
+            if self.context_memory and hasattr(self.context_memory, 'get_recent_exchanges'):
+                try:
+                    recent = self.context_memory.get_recent_exchanges(2)
+                    if recent:
+                        conversation_context = " ".join([ex.get('user', '') for ex in recent])
+                except:
+                    pass
+            
+            # Check dialogue system for INSPIRATION (not exact matching)
+            # Use it to understand the topic, not to provide scripted responses
+            relevant_topic = None
+            topic_keywords = []
+            if self.dialogue_system:
+                for topic_name, topic_data in self.dialogue_system.items():
+                    keywords = topic_data.get('keywords', [])
+                    # Count how many keywords match
+                    matches = sum(1 for kw in keywords if kw.lower() in user_input_lower)
+                    if matches > 0:
+                        relevant_topic = topic_name
+                        topic_keywords = keywords
+                        break
             
             # First check if this is a vision-related query
             if any(word in user_input_lower for word in ['see', 'look', 'detect', 'recognize', 'camera']):
@@ -1156,159 +1231,282 @@ class ARIMasterBrain:
                                     return f"Yes, I see you! I recognize {', '.join(names)}."
                                 return "I can see you, but I haven't been introduced yet. You can teach me who you are by saying 'learn my face as [your name]'."
                             return "I don't see any faces right now."
-                            
-            # Handle knowledge-based questions
-            if any(word in user_input_lower for word in ['what', 'who', 'where', 'when', 'why', 'how']):
-                # 1. Try improved knowledge first (most up to date)
-                if self.improved_knowledge:
-                    # Direct match
-                    if user_input_lower in self.improved_knowledge:
-                        return self.improved_knowledge[user_input_lower]
-                    # Partial match
-                    for key, value in self.improved_knowledge.items():
-                        if isinstance(key, str) and key.lower() in user_input_lower:
-                            if isinstance(value, str):
-                                return value
-                            elif isinstance(value, dict):
-                                if 'answer' in value:
-                                    return value['answer']
-
-                # 2. Try base knowledge
-                # Direct match
-                if user_input_lower in self.knowledge:
-                    return self.knowledge[user_input_lower]
-                
-                # Then check nested knowledge structure
-                for domain, content in self.knowledge.items():
-                    if isinstance(content, dict):
-                        # Check domain match
-                        if domain.lower() in user_input_lower:
-                            # Try chatbot questions/responses first (most natural)
-                            if 'chatbot_questions' in content and 'chatbot_responses' in content:
-                                for q, r in zip(content['chatbot_questions'], content['chatbot_responses']):
-                                    if any(keyword in user_input_lower for keyword in q.lower().split()):
-                                        return r
-                            # Try casual/formal explanations
-                            if 'casual' in content:
-                                return content['casual']
-                            elif 'formal' in content:
-                                return content['formal']
-                        
-                        # Check subdomain matches
-                        for subtopic, info in content.items():
-                            if isinstance(info, dict) and subtopic.lower() in user_input_lower:
-                                if 'casual' in info:
-                                    return info['casual']  # Prefer casual
-                                elif 'formal' in info:
-                                    return info['formal']
-
-                # 3. Try learned facts (most specific)
-                if self.learned_facts:
-                    for fact in self.learned_facts:
-                        # Check questions array
-                        questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
-                        for question in questions:
-                            if question and (question.lower() in user_input_lower or any(word in question.lower() for word in user_input_lower.split())):
-                                return fact.get('answer', fact.get('explanation', ''))
-
-                        # Check by topic
-                        if 'topic' in fact and fact['topic'].lower() in user_input_lower:
-                            return fact.get('answer', fact.get('explanation', ''))
-                            
-                # Check learned facts
-                if self.learned_facts:
-                    for fact in self.learned_facts:
-                        # Handle both array and single questions
-                        questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
-                        for question in questions:
-                            if question and question.lower() in user_input_lower:
-                                return fact.get('answer', fact.get('explanation', ''))
-                                
-                # Try advanced pattern matching
-                matching_responses = []
-                for topic, data in self.knowledge.items():
-                    if isinstance(data, dict):
-                        for subtopic, content in data.items():
-                            if isinstance(content, dict):
-                                if any(word in user_input_lower for word in subtopic.lower().split()):
-                                    if 'casual' in content:
-                                        matching_responses.append(content['casual'])
-                                    elif 'formal' in content:
-                                        matching_responses.append(content['formal'])
-                
-                if matching_responses:
-                    return max(matching_responses, key=len)  # Return most detailed response
-                    
-            # Handle greetings
-            if any(word in user_input_lower for word in ['hello', 'hi', 'hey']):
-                if self.user_profile.get('name'):
-                    return f"Hello {self.user_profile['name']}! How can I help you today?"
-                return "Hello! How can I help you today?"
-                
-            # Handle goodbyes
-            if any(word in user_input_lower for word in ['goodbye', 'bye', 'see you']):
-                return "Goodbye! It was nice talking with you."
-                
-            # Handle self-identity questions
-            if 'who are you' in user_input_lower or 'what are you' in user_input_lower:
-                return "I'm ARI (Advanced Robotic Intelligence), a personal AI assistant created by Vertex Fusion Robotics. I can help you with various tasks, answer questions, recognize faces and objects, and learn from our interactions."
-                
-            # If no specific response found, give a contextual learning response
-            context_words = [word for word in user_input_lower.split() if len(word) > 3]
-            if context_words:
-                return f"That's an interesting question about {' and '.join(context_words)}. While I'm still learning about this specific topic, I'd be happy to learn more together."
-                
-            return "I understand what you're asking, but I'm not sure how to answer that yet. Would you like to help me learn more about this topic?"
+            
+            # Generate a natural response based on context and topic
+            response = self._generate_natural_response(user_input, user_input_lower, relevant_topic, conversation_context)
+            
+            # Store this interaction in context memory for future reference
+            if response and self.context_memory:
+                try:
+                    self.context_memory.add_conversation_turn(
+                        user_input=user_input,
+                        ari_response=response,
+                        response_type=relevant_topic or "general",
+                        success=True
+                    )
+                except Exception as mem_err:
+                    print(f"Context memory storage error: {mem_err}")
+            
+            if response:
+                return response
+            
+            # Final fallback
+            return "I'm not quite sure how to respond to that. Could you rephrase or ask something else?"
             
         except Exception as e:
             print(f"Error in conversation response: {e}")
             return "I encountered an error while processing your request. Could you try rephrasing that?"
-
-        # Handle knowledge-based questions
-        if user_input_lower.startswith(('what', 'who', 'where', 'when', 'why', 'how')):
-            # First check if the exact question exists in knowledge
-            if user_input_lower in self.knowledge:
-                return self.knowledge[user_input_lower]
-            
-            # Then look for partial matches in knowledge
-            for key, value in self.knowledge.items():
-                if isinstance(key, str) and key.lower() in user_input_lower:
-                    return value
-            
-            # Check learned facts
-            if self.learned_facts:
-                for fact in self.learned_facts:
-                    # Handle arrays of questions
-                    questions = fact.get('question', []) if isinstance(fact.get('question'), list) else [fact.get('question', '')]
-                    for question in questions:
-                        if question.lower() in user_input_lower:
-                            return fact.get('answer', '')
-
-            # If no specific answer found, check if there's a relevant topic in knowledge
-            for key, value in self.knowledge.items():
-                if isinstance(value, dict):  # Handle nested knowledge structure
-                    for topic, info in value.items():
-                        if topic.lower() in user_input_lower:
-                            if isinstance(info, dict) and 'casual' in info:
-                                return info['casual']  # Prefer casual explanation
-                            elif isinstance(info, dict) and 'formal' in info:
-                                return info['formal']  # Fall back to formal explanation
-                            elif isinstance(info, str):
-                                return info
-
-            # If no specific answer found, give a learning-focused response
-            return "That's an interesting question. While I'm still learning, I'd be happy to learn more about this topic together."
+    
+    def _generate_natural_response(self, user_input: str, user_input_lower: str, topic: str = None, context: str = "") -> str:
+        """Generate natural, flowing responses based on understanding rather than scripts"""
+        import random
+        
+        # Get conversation history for context-aware responses
+        conversation_history = []
+        previous_topics = []
+        if self.context_memory:
+            try:
+                history = self.context_memory.get_conversation_history()
+                conversation_history = history[-5:] if history else []  # Last 5 exchanges
+                previous_topics = self.context_memory.get_current_topics()
+            except Exception as e:
+                pass
+        
+        # Extract key concepts from the input
+        question_words = ['what', 'who', 'where', 'when', 'why', 'how', 'can', 'do', 'does', 'is', 'are']
+        is_question = any(user_input_lower.startswith(qw) for qw in question_words) or '?' in user_input
+        
+        # Extract main subject words (longer than 3 chars, not common words)
+        stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'about', 'like', 'your', 'you', 'me', 'my', 'i', 'am', 'are', 'is', 'was', 'were', 'been', 'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'can'}
+        key_words = [word for word in user_input_lower.split() if len(word) > 3 and word not in stop_words]
+        
+        # Handle knowledge-based questions with natural language
+        if is_question:
+            # Try to find relevant knowledge
+            knowledge_result = self._search_knowledge_naturally(user_input_lower, key_words)
+            if knowledge_result:
+                answer = knowledge_result.get('answer', '')
+                follow_ups = knowledge_result.get('follow_ups', [])
                 
-        # Use banter system for general conversation
-        context_type = None
-        if any(word in user_input_lower for word in ['help', 'assist', 'can you']):
-            context_type = 'positive'
-        elif any(word in user_input_lower for word in ['problem', 'issue', 'error']):
-            context_type = 'negative'
-        elif any(word in user_input_lower for word in ['why', 'how', 'what', 'explain']):
-            context_type = 'logic'
+                # Add conversational wrapper based on topic
+                if topic == 'science':
+                    prefixes = ["That's a great scientific question! ", "Interesting - from what I understand, ", "Let me explain: "]
+                    response = random.choice(prefixes) + answer
+                elif topic == 'philosophy':
+                    prefixes = ["That's a profound question. ", "Philosophically speaking, ", "Here's an interesting perspective: "]
+                    response = random.choice(prefixes) + answer
+                elif topic == 'technology':
+                    prefixes = ["When it comes to technology, ", "That's a tech question I can help with! ", "From a technical standpoint, "]
+                    response = random.choice(prefixes) + answer
+                else:
+                    response = answer
+                
+                # Add a follow-up question to keep conversation going
+                if follow_ups:
+                    response += " " + random.choice(follow_ups)
+                elif key_words:  # Generate a follow-up if we don't have one
+                    # Check if we can reference previous topics
+                    if conversation_history and len(conversation_history) > 0:
+                        prev_topic_words = set()
+                        for turn in conversation_history[-2:]:
+                            prev_input = turn.get('user_input', '').lower()
+                            prev_words = [w for w in prev_input.split() if len(w) > 3 and w not in stop_words]
+                            prev_topic_words.update(prev_words)
+                        
+                        # Generate contextual follow-ups referencing previous discussion
+                        if prev_topic_words:
+                            prev_topic = list(prev_topic_words)[0] if prev_topic_words else None
+                            contextual_followups = [
+                                f"What else would you like to know about {key_words[0]}?",
+                                f"Does that make sense? We were also talking about {prev_topic} earlier - would you like to explore that more?",
+                                f"Have you had any experience with {key_words[0]}?",
+                                f"Speaking of {key_words[0]}, how does that relate to your interest in {prev_topic}?",
+                                f"Is there a specific aspect of {key_words[0]} you're curious about? Or should we revisit {prev_topic}?"
+                            ]
+                            response += " " + random.choice(contextual_followups)
+                        else:
+                            generic_followups = [
+                                f"What else would you like to know about {key_words[0]}?",
+                                f"Does that make sense? I can explain more about {key_words[0]} if you'd like.",
+                                f"Have you had any experience with {key_words[0]}?",
+                                f"Is there a specific aspect of {key_words[0]} you're curious about?"
+                            ]
+                            response += " " + random.choice(generic_followups)
+                    else:
+                        generic_followups = [
+                            f"What else would you like to know about {key_words[0]}?",
+                            f"Does that make sense? I can explain more about {key_words[0]} if you'd like.",
+                            f"Have you had any experience with {key_words[0]}?",
+                            f"Is there a specific aspect of {key_words[0]} you're curious about?"
+                        ]
+                        response += " " + random.choice(generic_followups)
+                
+                return response
+        
+        # Handle greetings with variety and personalization
+        if any(word in user_input_lower for word in ['hello', 'hi', 'hey', 'greetings']):
+            name = self.user_profile.get('name', '')
             
-        return self._select_banter_response(user_input, context_type)
+            # Reference previous conversation if exists
+            if conversation_history and len(conversation_history) > 2:
+                if previous_topics:
+                    contextual_greetings = [
+                        f"Hello{', ' + name if name else ''}! Good to see you again. Want to continue our discussion about {previous_topics[0]}?",
+                        f"Hi there{', ' + name if name else ''}! Welcome back. Should we pick up where we left off with {previous_topics[0]}?",
+                        f"Hey{', ' + name if name else ''}! Last time we were talking about {previous_topics[0]}. Want to explore that more or try something new?",
+                    ]
+                    return random.choice(contextual_greetings)
+            
+            greetings = [
+                f"Hello{', ' + name if name else ''}! What's on your mind today?",
+                f"Hi there{', ' + name if name else ''}! How can I help?",
+                f"Hey{', ' + name if name else ''}! What would you like to talk about?",
+                "Hello! Great to hear from you. What can I do for you?"
+            ]
+            return random.choice(greetings)
+        
+        # Handle gratitude
+        if any(word in user_input_lower for word in ['thank', 'thanks', 'appreciate']):
+            responses = [
+                "You're very welcome! Happy to help.",
+                "My pleasure! Let me know if you need anything else.",
+                "Anytime! That's what I'm here for.",
+                "Glad I could help! Feel free to ask me anything else."
+            ]
+            return random.choice(responses)
+        
+        # Handle identity questions naturally
+        if any(phrase in user_input_lower for phrase in ['who are you', 'what are you', 'tell me about yourself']):
+            return "I'm ARI - think of me as your personal AI assistant. I can chat with you, answer questions, help you learn new things, and even recognize faces if you have a camera. I'm always learning from our conversations, so the more we talk, the better I get at helping you!"
+        
+        # Handle capability questions
+        if any(phrase in user_input_lower for phrase in ['what can you do', 'your capabilities', 'help me with']):
+            return "I can do quite a bit! I can answer questions on science, technology, philosophy, and more. I can have conversations with you, learn from what we talk about, and remember important information. If you have a camera, I can even recognize faces and objects. What would you like to try?"
+        
+        # Handle feelings/emotions
+        if any(phrase in user_input_lower for phrase in ['how are you', 'how do you feel', 'are you okay']):
+            responses = [
+                "I'm doing great, thanks for asking! Ready to chat and help out. How are you doing?",
+                "I'm functioning perfectly and excited to talk with you! How about yourself?",
+                "I'm excellent! Each conversation helps me learn and grow. What's on your mind today?"
+            ]
+            return random.choice(responses)
+        
+        # For statements (not questions), engage conversationally
+        if not is_question and key_words:
+            # Check if this relates to previous conversation
+            continuing_conversation = False
+            if conversation_history and len(conversation_history) > 0:
+                for prev_turn in conversation_history[-2:]:
+                    prev_words = set([w.lower() for w in prev_turn.get('user_input', '').split() if len(w) > 3])
+                    if any(kw in prev_words for kw in key_words):
+                        continuing_conversation = True
+                        break
+            
+            # Check if it's about a topic we know
+            knowledge_result = self._search_knowledge_naturally(user_input_lower, key_words)
+            if knowledge_result:
+                answer = knowledge_result.get('answer', '')
+                follow_ups = knowledge_result.get('follow_ups', [])
+                
+                if continuing_conversation:
+                    response = f"I see you're still thinking about {key_words[0]}. {answer}"
+                else:
+                    response = f"That's interesting that you mention {key_words[0]}. {answer}"
+                
+                # Add contextual follow-up question
+                if follow_ups:
+                    response += " " + random.choice(follow_ups)
+                elif previous_topics and previous_topics[0] != key_words[0]:
+                    response += f" Does this connect to what we discussed about {previous_topics[0]}?"
+                else:
+                    response += f" What's your experience with {key_words[0]}?"
+                
+                return response
+            
+            # Generic engagement responses with conversational continuity
+            if continuing_conversation:
+                engagement_responses = [
+                    f"You're really exploring {key_words[0]} deeply! What else are you discovering?",
+                    f"I like how you're building on the {key_words[0]} topic. Where are your thoughts going with this?",
+                    f"That adds more context to what you were saying about {key_words[0]}. Tell me more!",
+                ]
+            else:
+                engagement_responses = [
+                    f"I find {key_words[0]} really interesting! Tell me more about what you're thinking.",
+                    f"That's a cool point about {' and '.join(key_words[:2]) if len(key_words) > 1 else key_words[0]}. What made you think of that?",
+                    f"I'm curious to hear more about your thoughts on {key_words[0]}. Have you studied it before?",
+                    f"That's fascinating! I'd love to learn more about your perspective on this. What draws you to {key_words[0]}?"
+                ]
+            return random.choice(engagement_responses)
+        
+        # Default: show interest and ask for more info
+        fallbacks = [
+            "That's an interesting point. Could you tell me more about what you mean?",
+            "I'm listening! What else would you like to share about that?",
+            "Interesting! I want to understand better - can you explain more?",
+            "I'm intrigued. Help me understand what you're asking about."
+        ]
+        return random.choice(fallbacks)
+    
+    def _search_knowledge_naturally(self, query_lower: str, key_words: list) -> dict:
+        """Search knowledge bases in a more flexible, natural way - returns dict with 'answer' and 'follow_ups'"""
+        import random
+        
+        # Try improved knowledge first
+        if self.improved_knowledge:
+            # Direct match
+            if query_lower in self.improved_knowledge:
+                answer = self.improved_knowledge[query_lower]
+                answer_text = answer if isinstance(answer, str) else answer.get('answer', '')
+                return {'answer': answer_text, 'follow_ups': []}
+            
+            # Flexible keyword matching
+            for key, value in self.improved_knowledge.items():
+                if isinstance(key, str) and any(kw in key.lower() for kw in key_words):
+                    answer_text = value if isinstance(value, str) else value.get('answer', '')
+                    return {'answer': answer_text, 'follow_ups': []}
+        
+        # Try base knowledge with flexible matching
+        if self.knowledge:
+            # Check nested structure
+            for domain, content in self.knowledge.items():
+                if isinstance(content, dict):
+                    # Check if domain matches any keywords
+                    if any(kw in domain.lower() for kw in key_words):
+                        # Look for casual explanation first (more natural)
+                        answer = content.get('casual', content.get('formal', ''))
+                        follow_ups = content.get('chatbot_questions', [])
+                        if answer:
+                            return {'answer': answer, 'follow_ups': follow_ups}
+                    
+                    # Check subtopics
+                    for subtopic, info in content.items():
+                        if isinstance(info, dict) and any(kw in subtopic.lower() for kw in key_words):
+                            answer = info.get('casual', info.get('formal', ''))
+                            follow_ups = info.get('chatbot_questions', [])
+                            if answer:
+                                return {'answer': answer, 'follow_ups': follow_ups}
+        
+        # Try learned facts
+        if self.learned_facts:
+            for fact in self.learned_facts:
+                # Check if any keywords match the fact's topic or question
+                topic = fact.get('topic', '').lower()
+                questions = fact.get('question', [])
+                if isinstance(questions, str):
+                    questions = [questions]
+                
+                if any(kw in topic for kw in key_words):
+                    answer = fact.get('answer', fact.get('explanation', ''))
+                    return {'answer': answer, 'follow_ups': []}
+                
+                for q in questions:
+                    if any(kw in q.lower() for kw in key_words):
+                        answer = fact.get('answer', fact.get('explanation', ''))
+                        return {'answer': answer, 'follow_ups': []}
+        
+        return None
 
     def save_json(self, filename, data):
         """Save data to a JSON file"""
@@ -2251,6 +2449,7 @@ class ARIMasterBrain:
 
                     if user_input.lower() in ["quit", "exit", "goodbye"]:
                         print("ARI: Goodbye!")
+                        self.speak("Goodbye!")  # Actually say goodbye
                         # Clean up GUI first
                         if self.gui_enabled and self.gui:
                             try:
@@ -2258,6 +2457,15 @@ class ARIMasterBrain:
                                 self.gui.stop()
                                 self.gui = None
                                 print("✅ GUI cleaned up")
+                            except:
+                                pass
+                        # Clean up grass GUI
+                        if self.grass_gui:
+                            try:
+                                print("🔄 Cleaning up Grass GUI...")
+                                self.grass_gui.stop()
+                                self.grass_gui = None
+                                print("✅ Grass GUI cleaned up")
                             except:
                                 pass
                         # Clean up camera if it's running
@@ -2488,8 +2696,13 @@ if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='ARI Master Brain - Advanced AI Assistant')
     parser.add_argument('--no-gui', action='store_true', help='Disable GUI interface (enabled by default)')
-    parser.add_argument('--grass-gui', action='store_true', help='Use simple grass animation GUI')
+    parser.add_argument('--grass-gui', action='store_true', default=True, help='Use simple grass animation GUI (default)')
+    parser.add_argument('--visual-gui', action='store_true', help='Use full visual avatar GUI (high memory)')
     args = parser.parse_args()
+    
+    # If visual-gui is requested, disable grass-gui
+    if args.visual_gui:
+        args.grass_gui = False
 
     try:
         print(f"🔧 Starting ARI with grass_gui={args.grass_gui}")

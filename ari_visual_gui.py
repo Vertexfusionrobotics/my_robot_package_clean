@@ -131,27 +131,33 @@ class ARIVisualGUI:
             # Open the GIF and extract all frames
             gif = Image.open(gif_path)
             
-            # Calculate size to fill screen while maintaining aspect ratio
+            # Calculate size to fit window (NOT screen) - prevent memory issues
             gif_width, gif_height = gif.size
             
-            # Scale to fill the entire screen
-            scale_x = self.screen_width / gif_width
-            scale_y = self.screen_height / gif_height
-            scale = max(scale_x, scale_y)  # Use larger scale to fill screen completely
+            # Use window dimensions (80% of screen) instead of full screen
+            window_width = int(self.screen_width * 0.8)
+            window_height = int(self.screen_height * 0.8)
+            
+            # Scale to fit window while maintaining aspect ratio
+            scale_x = window_width / gif_width
+            scale_y = window_height / gif_height
+            scale = min(scale_x, scale_y) * 0.9  # Use smaller scale and reduce to 90% to save memory
             
             new_width = int(gif_width * scale)
             new_height = int(gif_height * scale)
             
-            print(f"📐 Screen: {self.screen_width}x{self.screen_height}")
+            print(f"📐 Window: {window_width}x{window_height}")
             print(f"📐 Scaling GIF to: {new_width}x{new_height}")
             
-            # Get all frames from the animated GIF
+            # Limit frame count to prevent memory issues (max 30 frames)
+            max_frames = 30
             frame_count = 0
             try:
-                while True:
+                while frame_count < max_frames:
                     # Convert frame to PhotoImage for tkinter
                     frame = gif.copy()
-                    frame = frame.resize((new_width, new_height), Image.Resampling.LANCZOS)
+                    # Use BILINEAR for faster, less memory-intensive resizing
+                    frame = frame.resize((new_width, new_height), Image.Resampling.BILINEAR)
                     photo = ImageTk.PhotoImage(frame)
                     self.avatar_frames.append(photo)
                     frame_count += 1

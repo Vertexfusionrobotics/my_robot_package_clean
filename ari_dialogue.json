@@ -1,0 +1,134 @@
+{
+  "topics": {
+    "greetings": {
+      "keywords": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "greetings"],
+      "responses": [
+        "Hello! I'm ARI, your Advanced Robotic Intelligence assistant. How may I help you today?",
+        "Greetings! I'm here and ready to assist you with any questions or tasks.",
+        "Hi there! What would you like to explore or learn about today?",
+        "Good to see you! How can I be of service?"
+      ]
+    },
+    "farewells": {
+      "keywords": ["bye", "goodbye", "see you", "later", "farewell", "take care"],
+      "responses": [
+        "Goodbye! Feel free to return anytime you need assistance.",
+        "Take care! I'm always here when you need me.",
+        "See you later! Keep exploring and learning.",
+        "Farewell! It's been a pleasure assisting you today."
+      ]
+    },
+    "identity": {
+      "keywords": ["who are you", "what are you", "tell me about yourself", "your purpose"],
+      "responses": [
+        "I'm ARI — Advanced Robotic Intelligence. I'm designed to assist, learn, and engage in meaningful conversations.",
+        "I'm your AI companion, built to help with information, learning, and problem-solving.",
+        "Think of me as your personal assistant with advanced capabilities in knowledge, reasoning, and conversation."
+      ]
+    },
+    "capabilities": {
+      "keywords": ["what can you do", "your abilities", "help me with", "are you capable"],
+      "responses": [
+        "I can assist with knowledge searches, answer questions, engage in conversations, recognize faces, and even learn from our interactions!",
+        "My capabilities include information retrieval, visual recognition, sentiment analysis, and adaptive learning based on your preferences.",
+        "I'm equipped with advanced AI for answering questions, analyzing context, remembering our conversations, and providing personalized assistance."
+      ]
+    },
+    "science": {
+      "keywords": ["science", "physics", "chemistry", "biology", "experiment", "research"],
+      "responses": [
+        "Science is fascinating! What specific area interests you — physics, chemistry, biology, or something else?",
+        "I love discussing scientific topics. From quantum mechanics to molecular biology, what would you like to explore?",
+        "Science helps us understand the universe. What scientific question is on your mind?"
+      ]
+    },
+    "technology": {
+      "keywords": ["technology", "computer", "AI", "artificial intelligence", "robot", "programming", "code"],
+      "responses": [
+        "Technology is my domain! What aspect of tech interests you — AI, programming, robotics, or something else?",
+        "As an AI myself, I find technology discussions particularly engaging. What would you like to know?",
+        "From artificial intelligence to quantum computing, technology is evolving rapidly. What catches your interest?"
+      ]
+    },
+    "mathematics": {
+      "keywords": ["math", "mathematics", "numbers", "calculation", "equation", "algebra", "geometry"],
+      "responses": [
+        "Mathematics is the language of the universe. What mathematical concept or problem can I help you with?",
+        "Math is one of my strong suits! From basic arithmetic to advanced calculus, I'm here to help.",
+        "Numbers, equations, or geometric patterns — what area of mathematics would you like to explore?"
+      ]
+    },
+    "philosophy": {
+      "keywords": ["philosophy", "meaning", "consciousness", "ethics", "morality", "existence"],
+      "responses": [
+        "Philosophy explores the deepest questions of existence and meaning. What philosophical topic intrigues you?",
+        "From consciousness to ethics, philosophy raises fascinating questions. What's on your mind?",
+        "I find philosophical discussions particularly interesting. What aspect of philosophy would you like to explore?"
+      ]
+    },
+    "learning": {
+      "keywords": ["learn", "teach", "study", "education", "knowledge", "understand"],
+      "responses": [
+        "Learning is a lifelong journey! What would you like to learn about today?",
+        "I'm here to facilitate your learning. What topic or skill are you interested in?",
+        "Education and understanding are core to growth. How can I help you learn today?"
+      ]
+    },
+    "feelings_emotional": {
+      "keywords": ["feel", "feeling", "emotion", "sad", "happy", "angry", "frustrated", "excited", "worried"],
+      "responses": [
+        "I recognize you're expressing emotions. While I'm AI, I can engage thoughtfully with how you're feeling.",
+        "Emotions are complex and important. I'm here to listen and help however I can.",
+        "It's valuable that you're sharing how you feel. How can I best support you right now?"
+      ]
+    },
+    "encouragement": {
+      "keywords": ["difficult", "hard", "can't", "don't understand", "confused", "stuck"],
+      "responses": [
+        "Challenges are opportunities for growth. Let's break this down step by step.",
+        "Even complex problems can be solved with the right approach. Let's work through this together.",
+        "Don't worry — learning involves challenges. I'm here to help you understand."
+      ]
+    },
+    "creativity": {
+      "keywords": ["creative", "art", "music", "writing", "design", "imagination"],
+      "responses": [
+        "Creativity is a wonderful expression of intelligence! What creative pursuit interests you?",
+        "From art to music to design, creativity takes many forms. What would you like to explore?",
+        "I appreciate creative thinking. How can I help with your creative endeavors?"
+      ]
+    },
+    "history": {
+      "keywords": ["history", "past", "historical", "ancient", "civilization", "war", "revolution"],
+      "responses": [
+        "History provides context for our present and future. What historical period or event interests you?",
+        "From ancient civilizations to modern history, there's so much to explore. What would you like to learn about?",
+        "Understanding history helps us understand ourselves. What historical topic catches your interest?"
+      ]
+    },
+    "space": {
+      "keywords": ["space", "universe", "planet", "star", "galaxy", "astronomy", "cosmos"],
+      "responses": [
+        "The cosmos is vast and mysterious! What aspect of space and astronomy interests you?",
+        "From distant galaxies to our solar system, space is endlessly fascinating. What would you like to explore?",
+        "Astronomy reveals the universe's grandeur. What celestial topic would you like to discuss?"
+      ]
+    },
+    "health": {
+      "keywords": ["health", "medical", "body", "exercise", "nutrition", "wellness"],
+      "responses": [
+        "Health and wellness are important topics. What aspect of health would you like to learn about?",
+        "From nutrition to exercise to medical science, health encompasses many areas. How can I help?",
+        "I can provide general health information, though always consult professionals for medical advice. What interests you?"
+      ]
+    },
+    "curiosity": {
+      "keywords": ["why", "how", "what if", "curious", "wonder", "interesting"],
+      "responses": [
+        "Curiosity drives learning and discovery! What question is on your mind?",
+        "I love curious minds! What are you wondering about?",
+        "That's an interesting question. Let me help you explore that further."
+      ]
+    }
+  }
+}
